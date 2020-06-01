@@ -246,8 +246,7 @@
         "extra":
           {  } },
       { "name": "createOrder",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "orderInfo",
@@ -695,8 +694,7 @@
           { "notes":
               [ "For security reasons, we recommend that you do not expose the `createOrder()` backend function\n to site visitors (such as through button clicks and so on)." ] } },
       { "name": "createProduct",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "productInfo",
@@ -3180,7 +3178,7 @@
         "labels": [] },
       { "name": "Activities",
         "locations":
-          [ { "lineno": 119,
+          [ { "lineno": 122,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An array of objects representing a log of changes and updates related to the order.",
@@ -3203,8 +3201,7 @@
               "doc": "The time the change or update (activity) occurred." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Activity",
         "locations":
           [ { "lineno": 10,
@@ -3271,7 +3268,7 @@
         "labels": [] },
       { "name": "Address",
         "locations":
-          [ { "lineno": 156,
+          [ { "lineno": 159,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing address information.",
@@ -3313,13 +3310,12 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "AppliedCoupon",
         "locations":
           [ { "lineno": 32,
               "filename": "carts.js" },
-            { "lineno": 478,
+            { "lineno": 481,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing a coupon applied in a shopping cart.",
@@ -3519,7 +3515,7 @@
         "labels": [] },
       { "name": "BillingInfo",
         "locations":
-          [ { "lineno": 231,
+          [ { "lineno": 234,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing an order's billing info.",
@@ -3578,14 +3574,11 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "BuyerInfo",
         "locations":
           [ { "lineno": 52,
-              "filename": "carts.js" },
-            { "lineno": 99,
-              "filename": "orders.js" } ],
+              "filename": "carts.js" } ],
         "docs":
           { "summary": "An object representing a visitor who abandoned a shopping cart.",
             "links": [],
@@ -3920,8 +3913,7 @@
               "doc": "The order's units of weight. One of: `\"KG\"`, `\"LB\"`, or `\"UNSPECIFIED_WEIGHT_UNIT\"`." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "CartAddress",
         "locations":
           [ { "lineno": 19,
@@ -4121,8 +4113,7 @@
               "doc": "Address." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "CartLineItem",
         "locations":
           [ { "lineno": 94,
@@ -4290,8 +4281,7 @@
               "doc": "Custom text." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "CartShippingInfo",
         "locations":
           [ { "lineno": 82,
@@ -4545,11 +4535,10 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "ChannelInfo",
         "locations":
-          [ { "lineno": 178,
+          [ { "lineno": 181,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing information about the sales channel that submitted this order.",
@@ -4571,8 +4560,7 @@
               "doc": "Sales channel that submitted the order.\nOne of:\n\n\n + `\"WEB\"`: Wix online store.\n + `\"POS\"`: Point of sale. \n + `\"EBAY\"`: eBay.\n + `\"OTHER_PLATFORM\"`: Order imported from another system (e.g., Cart2Cart).\n + `\"WIX_APP_STORE\"`: Order created via the Wix mobile app." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Choice",
         "locations":
           [ { "lineno": 381,
@@ -4612,7 +4600,7 @@
         "labels": [] },
       { "name": "CreateOrderBillingInfo",
         "locations":
-          [ { "lineno": 215,
+          [ { "lineno": 218,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing billing information for creating an order.",
@@ -4663,11 +4651,10 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "CreateOrderBuyerInfo",
         "locations":
-          [ { "lineno": 92,
+          [ { "lineno": 95,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing buyer information for creating an order.",
@@ -4681,11 +4668,10 @@
               "doc": "Unique buyer's ID." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "CreateOrderLineItem",
         "locations":
-          [ { "lineno": 384,
+          [ { "lineno": 387,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing a line item for creating an order.",
@@ -4767,11 +4753,10 @@
               "doc": "Line item's variant ID." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "CreateOrderLineItemPriceData",
         "locations":
-          [ { "lineno": 277,
+          [ { "lineno": 280,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing an line item's price information for creating an order.",
@@ -4788,11 +4773,10 @@
               "doc": "Whether the price includes tax." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "CreateOrderMediaItem",
         "locations":
-          [ { "lineno": 332,
+          [ { "lineno": 335,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing a line item's primary media item for creating an order.",
@@ -4814,11 +4798,10 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "CreateOrderTotals",
         "locations":
-          [ { "lineno": 431,
+          [ { "lineno": 434,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing an order's totals for creating an order.",
@@ -4847,8 +4830,7 @@
               "doc": "Total price." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Currency",
         "locations":
           [ { "lineno": 72,
@@ -5075,7 +5057,7 @@
         "labels": [] },
       { "name": "CustomField",
         "locations":
-          [ { "lineno": 442,
+          [ { "lineno": 445,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing a custom field added by the customer during the checkout process.",
@@ -5095,13 +5077,12 @@
               "doc": "Custom field's text." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "CustomTextField",
         "locations":
           [ { "lineno": 131,
               "filename": "carts.js" },
-            { "lineno": 341,
+            { "lineno": 344,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing a custom text field.",
@@ -5233,7 +5214,7 @@
         "labels": [] },
       { "name": "Discount",
         "locations":
-          [ { "lineno": 487,
+          [ { "lineno": 490,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing a discount applied to the order.",
@@ -5247,11 +5228,10 @@
               "doc": "Information about an applied coupon." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "EnteredBy",
         "locations":
-          [ { "lineno": 198,
+          [ { "lineno": 201,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing information about the identity of the order initiator.\nOccasionally, the person that completes the order isn't the buyer. For example, this occurs when an order is created using a point of sale terminal.",
@@ -5267,11 +5247,10 @@
               "doc": "Order was created by one of the following:\n\n\n  + `\"USER\"`: Wix user who performed a POS transaction on behalf of the buyer.\n  + `\"MEMBER\"`: Logged-in site member.\n  + `\"CONTACT\"`: A Wix contact." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Fulfillment",
         "locations":
-          [ { "lineno": 468,
+          [ { "lineno": 471,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing order fulfillment details.",
@@ -5295,8 +5274,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "InventoryItem",
         "locations":
           [ { "lineno": 1,
@@ -6544,7 +6522,7 @@
           [ "removed" ] },
       { "name": "LineItemPriceData",
         "locations":
-          [ { "lineno": 268,
+          [ { "lineno": 271,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing an line item's price information.",
@@ -6564,11 +6542,10 @@
               "doc": "Whether the price includes tax." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "LineItems",
         "locations":
-          [ { "lineno": 451,
+          [ { "lineno": 454,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing information about a fulfillment's line items.",
@@ -6585,8 +6562,7 @@
               "doc": "Number of items in this line." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Media",
         "locations":
           [ { "lineno": 352,
@@ -6668,7 +6644,7 @@
         "labels": [] },
       { "name": "MediaItem",
         "locations":
-          [ { "lineno": 321,
+          [ { "lineno": 324,
               "filename": "orders.js" },
             { "lineno": 66,
               "filename": "products.js" } ],
@@ -6698,13 +6674,12 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Option",
         "locations":
           [ { "lineno": 120,
               "filename": "carts.js" },
-            { "lineno": 313,
+            { "lineno": 316,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing a line item option.",
@@ -6842,7 +6817,286 @@
           { "summary": "An object representing an order.",
             "links":
               [ "[createOrder()](#createOrder)" ],
-            "examples": [],
+            "examples":
+              [ { "title": "Create a new order.",
+                  "body":
+                    [ "/****************",
+                      " * Backend code *",
+                      " ****************/",
+                      "",
+                      "import wixStoresBackend from 'wix-stores-backend';",
+                      "",
+                      "export function myBackendFunction(myOrder) {",
+                      "    return wixStoresBackend.createOrder(myOrder);",
+                      "}",
+                      "",
+                      "/********************",
+                      " * Client-side code *",
+                      " ********************/",
+                      "",
+                      "import { myBackendFunction } from 'backend/myModule';",
+                      "",
+                      "// ...",
+                      "",
+                      "const fullOrder = {",
+                      "    \"buyerLanguage\": \"en\",",
+                      "    \"buyerInfo\": {",
+                      "        \"id\": \"f6c2c0f9-4e9f-a58d-a02d-9af2497294d9\"",
+                      "    },",
+                      "    \"currency\": \"USD\",",
+                      "    \"weightUnit\": \"KG\",",
+                      "    \"billingInfo\": {",
+                      "        \"address\": {",
+                      "            \"formatted\": \"235 W 23rd St New York, NY 10011, USA\",",
+                      "            \"city\": \"New York\",",
+                      "            \"country\": \"US\",",
+                      "            \"addressLine\": \"235 W 23rd St\",",
+                      "            \"postalCode\": \"10011\",",
+                      "            \"subdivision\": \"NY\"",
+                      "        },",
+                      "        \"lastName\": \"Doe\",",
+                      "        \"firstName\": \"John\",",
+                      "        \"email\": \"john.doe@somedomain.com\",",
+                      "        \"phone\": \"+15555555555\",",
+                      "        \"company\": \"My company name\",",
+                      "        \"paymentMethod\": \"VISA\",",
+                      "        \"paymentGatewayTransactionId\": \"29A06193U6234935D\",",
+                      "        \"paymentProviderTransactionId\": \"7c03ca74-eaf5-4541-8678-9b857634fdcb\"",
+                      "    },",
+                      "    \"totals\": {",
+                      "        \"subtotal\": \"5\",",
+                      "        \"total\": \"5\",",
+                      "        \"shipping\": 0",
+                      "    },",
+                      "    \"channelInfo\": {",
+                      "        \"type\": \"WEB\"",
+                      "    },",
+                      "    \"paymentStatus\": \"PAID\",",
+                      "    \"shippingInfo\": {",
+                      "        \"deliverByDate\": \"2019-06-23T13:58:47.871Z\",",
+                      "        \"deliveryOption\": \"Free Shipping\",",
+                      "        \"estimatedDeliveryTime\": \"4:30pm\",",
+                      "        \"shipmentDetails\": {",
+                      "            \"address\": {",
+                      "                \"formatted\": \"235 W 23rd St, New York, NY 10011, USA\",",
+                      "                \"city\": \"New York\",",
+                      "                \"country\": \"US\",",
+                      "                \"addressLine\": \"235 W 23rd St\",",
+                      "                \"postalCode\": \"10011\",",
+                      "                \"subdivision\": \"NY\"",
+                      "            },",
+                      "            \"lastName\": \"Doe\",",
+                      "            \"firstName\": \"John\",",
+                      "            \"email\": \"john.doe@somedomain.com\",",
+                      "            \"phone\": \"5555555555\",",
+                      "            \"company\": \"company name\",",
+                      "            \"shipmentPriceData\": {",
+                      "                \"price\": 5,",
+                      "                \"taxIncludedInPrice\": false",
+                      "            }",
+                      "        }",
+                      "    },",
+                      "    \"lineItems\": [{",
+                      "        \"customTextFields\": [{",
+                      "            \"title\": \"Notes for delivery\",",
+                      "            \"value\": \"Please leave at front door\"",
+                      "        }],",
+                      "        \"productId\": \"3fb6a3c8-988b-8755-04bd-5c59ae0b18ea\",",
+                      "        \"lineItemType\": \"PHYSICAL\",",
+                      "        \"mediaItem\": {",
+                      "            \"altText\": \"This is a description of the image\",",
+                      "            \"id\": \"nsplsh_5386255~mv2_d_2977_3951_s_4_2.jpg\",",
+                      "            \"externalImageUrl\": \"http://static.wixstatic...al_c,q_90/file.jpg\"",
+                      "        },",
+                      "        \"name\": \"my product's name\",",
+                      "        \"options\": [{",
+                      "            \"option\": \"Size\",",
+                      "            \"selection\": \"Medium\"",
+                      "        }],",
+                      "        \"quantity\": 1,",
+                      "        \"sku\": \"36523641234523\",",
+                      "        \"weight\": 1.42,",
+                      "        \"translatedName\": \"Nombre traducido\",",
+                      "        \"discount\": 0,",
+                      "        \"tax\": 5,",
+                      "        \"priceData\": {",
+                      "            \"price\": \"5\",",
+                      "            \"taxIncludedInPrice\": true",
+                      "        }",
+                      "    }],",
+                      "    \"customField\": {",
+                      "        \"title\": \"Notes for delivery\",",
+                      "        \"translatedTitle\": \"Notas de entrega\",",
+                      "        \"value\": \"Please call when outside\"",
+                      "    },",
+                      "    \"fulfillments\": [{",
+                      "        \"id\": \"8\",",
+                      "        \"dateCreated\": \"2020-04-20T21:00:00.000Z\",",
+                      "        \"lineItems\": [{",
+                      "            \"index\": 1,",
+                      "            \"quantity\": 1",
+                      "        }],",
+                      "        \"trackingInfo\": {",
+                      "            \"trackingNumber\": \"449044304137821\",",
+                      "            \"shippingProvider\": \"FEDEX\",",
+                      "            \"trackingLink\": \"https://www.fedex.com/...trackingnumber=449044304137821\"",
+                      "        }",
+                      "    }],",
+                      "    \"discount\": {",
+                      "        \"appliedCoupon\": {",
+                      "            \"code\": \"47d259d6-7d1e-4ea5-a75c79ca9bb1\",",
+                      "            \"couponId\": \"558b511f-6eb7-82d3-53fca7374dfa\",",
+                      "            \"name\": \"Summer sale\"",
+                      "        }",
+                      "    }",
+                      "}",
+                      "",
+                      "myBackendFunction(fullOrder)",
+                      "    .then(() => {",
+                      "        // order created",
+                      "    })",
+                      "    .catch((error) => {",
+                      "        // order not created",
+                      "    })",
+                      "",
+                      "/* Example of returned order object",
+                      "",
+                      "{",
+                      "    \"_id\": \"d5d43d01-d9a4-4cc2-b257-61184b881447\",",
+                      "    \"_updatedDate\": \"2020-05-27T12:20:37.994Z\",",
+                      "    \"buyerLanguage\": \"en\",",
+                      "    \"channelInfo\": {",
+                      "        \"type\": \"WEB\"",
+                      "    },",
+                      "    \"enteredBy\": {",
+                      "        \"id\": \"f6c2c0f9-4e9f-a58d-a02d-9af2497294d9\",",
+                      "        \"identityType\": \"MEMBER\"",
+                      "    },",
+                      "    \"billingInfo\": {",
+                      "        \"address\": {",
+                      "            \"formatted\": \"My company name\\n235 W 23rd St\\nNew York, New York 10011\\nUnited States\\n+15555555555\",",
+                      "            \"city\": \"New York\",",
+                      "            \"country\": \"USA\",",
+                      "            \"addressLine\": \"235 W 23rd St\",",
+                      "            \"postalCode\": \"10011\",",
+                      "            \"subdivision\": \"NY\"",
+                      "        },",
+                      "        \"firstName\": \"John\",",
+                      "        \"lastName\": \"Doe\",",
+                      "        \"email\": \"john.doe@somedomain.com\",",
+                      "        \"phone\": \"+15555555555\",",
+                      "        \"company\": \"My company name\",",
+                      "        \"externalTransactionId\": \"7c03ca74-eaf5-4541-8678-9b857634fdcb\",",
+                      "        \"paidDate\": \"2020-05-27T12:20:37.994Z\",",
+                      "        \"paymentMethod\": \"VISA\",",
+                      "        \"paymentGatewayTransactionId\": \"29A06193U6234935D\",",
+                      "        \"paymentProviderTransactionId\": \"7c03ca74-eaf5-4541-8678-9b857634fdcb\"",
+                      "    },",
+                      "    \"buyerInfo\": {",
+                      "        \"id\": \"f6c2c0f9-4e9f-a58d-a02d-9af2497294d9\",",
+                      "        \"type\": \"MEMBER\",",
+                      "        \"identityType\": \"MEMBER\",",
+                      "        \"firstName\": \"John\",",
+                      "        \"lastName\": \"Doe\",",
+                      "        \"phone\": \"+15555555555\",",
+                      "        \"email\": \"john.doe@somedomain.com\"",
+                      "    },",
+                      "    \"_dateCreated\": \"2020-05-27T12:20:37.966Z\",",
+                      "    \"currency\": \"ILS\",",
+                      "    \"fulfillmentStatus\": \"NOT_FULFILLED\",",
+                      "    \"archived\": false,",
+                      "    \"activities\": [",
+                      "        {",
+                      "            \"type\": \"ORDER_PLACED\",",
+                      "            \"timestamp\": \"2020-05-27T12:20:37.966Z\"",
+                      "        },",
+                      "        {",
+                      "            \"type\": \"ORDER_PAID\",",
+                      "            \"timestamp\": \"2020-05-27T12:20:37.994Z\"",
+                      "        }",
+                      "    ],",
+                      "    \"number\": 10019,",
+                      "    \"paymentStatus\": \"PAID\",",
+                      "    \"shippingInfo\": {",
+                      "        \"deliveryOption\": \"Free Shipping\",",
+                      "        \"estimatedDeliveryTime\": \"4:30pm\",",
+                      "        \"shipmentDetails\": {",
+                      "            \"address\": {",
+                      "                \"formatted\": \"company name\\n235 W 23rd St\\nNew York, New York 10011\\nUnited States\\n5555555555\",",
+                      "                \"city\": \"New York\",",
+                      "                \"country\": \"USA\",",
+                      "                \"addressLine\": \"235 W 23rd St\",",
+                      "                \"postalCode\": \"10011\",",
+                      "                \"subdivision\": \"NY\"",
+                      "            },",
+                      "            \"firstName\": \"John\",",
+                      "            \"lastName\": \"Doe\",",
+                      "            \"email\": \"john.doe@somedomain.com\",",
+                      "            \"phone\": \"5555555555\",",
+                      "            \"company\": \"company name\",",
+                      "            \"tax\": 0,",
+                      "            \"discount\": 0,",
+                      "            \"priceData\": null",
+                      "        },",
+                      "        \"pickupDetails\": null",
+                      "    },",
+                      "    \"lineItems\": [",
+                      "        {",
+                      "            \"index\": 1,",
+                      "            \"quantity\": 1,",
+                      "            \"price\": 5,",
+                      "            \"name\": \"my product's name\",",
+                      "            \"translatedName\": \"Nombre traducido\",",
+                      "            \"productId\": \"3fb6a3c8-988b-8755-04bd-5c59ae0b18ea\",",
+                      "            \"totalPrice\": 5,",
+                      "            \"lineItemType\": \"PHYSICAL\",",
+                      "            \"options\": [",
+                      "                {",
+                      "                    \"option\": \"Size\",",
+                      "                    \"selection\": \"Medium\"",
+                      "                }",
+                      "            ],",
+                      "            \"customTextFields\": [",
+                      "                {",
+                      "                    \"title\": \"Notes for delivery\",",
+                      "                    \"value\": \"Please leave at front door\"",
+                      "                }",
+                      "            ],",
+                      "            \"weight\": 1.42,",
+                      "            \"sku\": \"36523641234523\",",
+                      "            \"discount\": 0,",
+                      "            \"tax\": 5,",
+                      "            \"taxIncludedInPrice\": true,",
+                      "            \"priceData\": {",
+                      "                \"price\": 5,",
+                      "                \"totalPrice\": 5,",
+                      "                \"taxIncludedInPrice\": true",
+                      "            },",
+                      "            \"mediaItem\": null",
+                      "        }",
+                      "    ],",
+                      "    \"totals\": {",
+                      "        \"discount\": 0,",
+                      "        \"quantity\": 1,",
+                      "        \"shipping\": 0,",
+                      "        \"subtotal\": 5,",
+                      "        \"tax\": 0,",
+                      "        \"total\": 5,",
+                      "        \"weight\": 1.42",
+                      "    },",
+                      "    \"weightUnit\": \"KG\",",
+                      "    \"customField\": {",
+                      "        \"value\": \"Please call when outside\",",
+                      "        \"title\": \"Notes for delivery\",",
+                      "        \"translatedTitle\": \"Notas de entrega\"",
+                      "    },",
+                      "    \"fulfillments\": [],",
+                      "    \"discount\": null",
+                      "}",
+                      "",
+                      "*/" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "members":
@@ -6870,7 +7124,7 @@
               "doc": "Billing information.",
               "optional": true },
             { "name": "buyerInfo",
-              "type": "wix-stores-backend.BuyerInfo",
+              "type": "wix-stores-backend.OrderBuyerInfo",
               "doc": "Buyer information." },
             { "name": "buyerNote",
               "type": "string",
@@ -6884,7 +7138,7 @@
               "doc": "Order currency." },
             { "name": "fulfillmentStatus",
               "type": "string",
-              "doc": "The order's current fulfillment status (whether the order received a tracking number or was delivered/picked up).\n One of:\n\n - `\"NOT_FULFILLED\"`: Order is not yet fulfilled.\n - `\"FULFILLED\"`: Order was fulfilled successfully.\n - `\"CANCELLED\"`: Order was cancelled.\n - `\"PARTIALLY_FULFILLED\"`: Order was partially fulfilled. For example, when only some of the order's items were fulfilled)." },
+              "doc": "The order's current fulfillment status (whether the order received a tracking number or was delivered/picked up).\nOne of:\n\n + `\"NOT_FULFILLED\"`: Order is not yet fulfilled.\n + `\"FULFILLED\"`: Order was fulfilled successfully.\n + `\"CANCELLED\"`: Order was cancelled.\n + `\"PARTIALLY_FULFILLED\"`: Order was partially fulfilled. For example, when only some of the order's items were fulfilled." },
             { "name": "archived",
               "type": "boolean",
               "doc": "Whether or not the order was archived." },
@@ -6899,7 +7153,7 @@
               "doc": "Running order number." },
             { "name": "paymentStatus",
               "type": "string",
-              "doc": "Current status of the payment.\nOne of:\n\n - `\"PENDING\"`: Payment not yet complete.\n - `\"NOT_PAID\"`: Payment was not made.\n - `\"PAID\"`: Order was successfully paid for.\n - `\"PARTIALLY_REFUNDED\"`: Order was partially refunded.\n - `\"FULLY_REFUNDED\"`: Order was refunded in full." },
+              "doc": "Current status of the payment.\nOne of:\n\n + `\"PENDING\"`: Payment not yet complete.\n + `\"NOT_PAID\"`: Payment was not made.\n + `\"PAID\"`: Order was successfully paid for.\n + `\"PARTIALLY_REFUNDED\"`: Order was partially refunded.\n + `\"FULLY_REFUNDED\"`: Order was refunded in full." },
             { "name": "shippingInfo",
               "type": "wix-stores-backend.OrderShippingInfo",
               "doc": "Shipping information.",
@@ -6933,10 +7187,44 @@
         "extra":
           {  },
         "labels":
+          [ "changed" ] },
+      { "name": "OrderBuyerInfo",
+        "locations":
+          [ { "lineno": 102,
+              "filename": "orders.js" } ],
+        "docs":
+          { "summary": "An object representing information about the buyer.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "id",
+              "type": "string",
+              "doc": "Unique buyer's ID." },
+            { "name": "email",
+              "type": "string",
+              "doc": "Buyer's email address." },
+            { "name": "firstName",
+              "type": "string",
+              "doc": "Buyer's first name." },
+            { "name": "lastName",
+              "type": "string",
+              "doc": "Buyer's last name." },
+            { "name": "identityType",
+              "type": "string",
+              "doc": "Buyer's identity.\nOne of:\n\n\n + `\"MEMBER\"`: A logged-in site member.\n + `\"CONTACT\"`: A Wix contact." },
+            { "name": "phone",
+              "type": "string",
+              "doc": "Buyer's phone number.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
           [ "new" ] },
       { "name": "OrderInfo",
         "locations":
-          [ { "lineno": 66,
+          [ { "lineno": 68,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing information for creating an order.",
@@ -6973,7 +7261,7 @@
               "optional": true },
             { "name": "paymentStatus",
               "type": "string",
-              "doc": "Current status of the payment.\nOne of:\n\n - `\"PENDING\"`: Payment not yet complete.\n - `\"NOT_PAID\"`: Payment was not made.\n - `\"PAID\"`: Order was successfully paid for." },
+              "doc": "Current status of the payment.\nOne of:\n\n + `\"PENDING\"`: Payment not yet complete.\n + `\"NOT_PAID\"`: Payment was not made.\n + `\"PAID\"`: Order was successfully paid for." },
             { "name": "shippingInfo",
               "type": "wix-stores-backend.OrderShippingInfo",
               "doc": "Shipping information." },
@@ -7001,10 +7289,10 @@
         "extra":
           {  },
         "labels":
-          [ "new" ] },
+          [ "changed" ] },
       { "name": "OrderLineItem",
         "locations":
-          [ { "lineno": 349,
+          [ { "lineno": 352,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing a line item in an order.",
@@ -7089,11 +7377,10 @@
               "doc": "Line item's variant ID." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "OrderShippingInfo",
         "locations":
-          [ { "lineno": 249,
+          [ { "lineno": 252,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing an order's shipping information.",
@@ -7123,8 +7410,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "OrderTotals",
         "locations":
           [ { "lineno": 141,
@@ -7421,7 +7707,7 @@
         "labels": [] },
       { "name": "PickupDetails",
         "locations":
-          [ { "lineno": 301,
+          [ { "lineno": 304,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing an order's pickup details.",
@@ -7456,8 +7742,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Product",
         "locations":
           [ { "lineno": 18,
@@ -7895,8 +8180,7 @@
               "doc": "Product variants." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "ProductAdditionalInfoSection",
         "locations":
           [ { "lineno": 89,
@@ -8549,7 +8833,7 @@
         "labels": [] },
       { "name": "ShipmentDetails",
         "locations":
-          [ { "lineno": 285,
+          [ { "lineno": 288,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing an order's shipping details.",
@@ -8600,11 +8884,10 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "ShipmentPriceData",
         "locations":
-          [ { "lineno": 260,
+          [ { "lineno": 263,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing shipment price information.",
@@ -8621,8 +8904,7 @@
               "doc": "Whether the price includes tax." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "ShippingInfo",
         "locations":
           [ { "lineno": 82,
@@ -8880,7 +9162,7 @@
           [ "removed" ] },
       { "name": "StreetAddress",
         "locations":
-          [ { "lineno": 148,
+          [ { "lineno": 151,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing information about the street name and street number of an address.",
@@ -8897,11 +9179,10 @@
               "doc": "Address street number." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Totals",
         "locations":
-          [ { "lineno": 418,
+          [ { "lineno": 421,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing an order's totals.",
@@ -8936,11 +9217,10 @@
               "doc": "Total weight of the order's items." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "TrackingInfo",
         "locations":
-          [ { "lineno": 459,
+          [ { "lineno": 462,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing tracking information for a fulfilled order.",
@@ -8960,8 +9240,7 @@
               "doc": "Link to the tracking summary of the fulfilled order." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "VariantInfo",
         "locations":
           [ { "lineno": 328,
@@ -9222,7 +9501,7 @@
         "labels": [] },
       { "name": "VatId",
         "locations":
-          [ { "lineno": 170,
+          [ { "lineno": 173,
               "filename": "orders.js" } ],
         "docs":
           { "summary": "An object representing value added tax (VAT) information.",
@@ -9239,8 +9518,7 @@
               "doc": "VAT type. Either `\"CPF\"` or `\"CNPJ\"`." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] } ],
+        "labels": [] } ],
   "extra":
     {  },
   "menuSections": "APIs",
