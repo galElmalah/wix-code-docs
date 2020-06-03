@@ -678,7 +678,8 @@
           { "notes":
               [ "Do not pass important information from client-side code. Doing so opens a vulnerability that a malicious user can exploit to change information, such as a buyer’s personal details (address, email, etc.) or product price information. To learn more about how to keep your code secure, see [Security Considerations When Working with Wix Code](https://support.wix.com/en/article/corvid-security-considerations#code-visibility)." ] } },
       { "name": "createProduct",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "productInfo",
@@ -1230,7 +1231,7 @@
               {  } },
         "extra":
           { "notes":
-              [ "* Do not pass important information from client-side code. Doing so opens a vulnerability that a malicious user can exploit to change information, such as product price information. To learn more about how to keep your code secure, see [Security Considerations When Working with Wix Code](https://support.wix.com/en/article/corvid-security-considerations#code-visibility)." ] } },
+              [ "Do not pass important information from client-side code. Doing so opens a vulnerability that a malicious user can exploit to change information, such as product price information. To learn more about how to keep your code secure, see [Security Considerations When Working with Wix Code](https://support.wix.com/en/article/corvid-security-considerations#code-visibility)." ] } },
       { "name": "deleteProduct",
         "labels": [],
         "nameParams": [],
@@ -5488,8 +5489,7 @@
               "doc": "Field value." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "CartLineItem",
         "locations":
           [ { "lineno": 94,
@@ -5657,8 +5657,7 @@
               "doc": "Custom text." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "CartShippingInfo",
         "locations":
           [ { "lineno": 82,
@@ -7133,7 +7132,7 @@
               "optional": true },
             { "name": "mediaItem",
               "type": "wix-stores-backend.CreateOrderMediaItem",
-              "doc": "Information about the line item's primary media item." },
+              "doc": "Line item's primary media item. Pass either `id` or `externalImageUrl`." },
             { "name": "name",
               "type": "string",
               "doc": "Name of the line item." },
@@ -7188,7 +7187,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "CreateOrderLineItemPriceData",
         "locations":
           [ { "lineno": 283,
@@ -7478,7 +7478,7 @@
           [ { "lineno": 339,
               "filename": "orders.js" } ],
         "docs":
-          { "summary": "An object representing a line item's primary media item for creating an order. Pass either `id` or `externalImageUrl`.",
+          { "summary": "An object representing a line item's primary media item for creating an order.",
             "links": [],
             "examples":
               [ { "title": "Create a new order",
@@ -7762,7 +7762,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "CreateOrderTotals",
         "locations":
           [ { "lineno": 436,
@@ -8853,8 +8854,7 @@
               "doc": "Field value." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Discount",
         "locations":
           [ { "lineno": 492,
@@ -11956,8 +11956,7 @@
               "doc": "Selected option." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Order",
         "locations":
           [ { "lineno": 18,
