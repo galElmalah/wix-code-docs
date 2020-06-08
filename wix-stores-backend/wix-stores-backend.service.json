@@ -2291,8 +2291,7 @@
           { "notes":
               [ "The `Manage Variants` field for the product must be set to true to reset variant data." ] } },
       { "name": "updateInventoryVariantFields",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "inventoryId",
@@ -2581,7 +2580,7 @@
             "links":
               [ "[updateInventoryVariantFields( )](#updateInventoryVariantFields)" ],
             "examples":
-              [ { "title": "Update a variant's inventory information by product ID.",
+              [ { "title": "Update a variant's inventory information by product ID",
                   "body":
                     [ "/****************",
                       " * backend code *",
@@ -2658,7 +2657,7 @@
                       " */" ],
                   "extra":
                     {  } },
-                { "title": "Update",
+                { "title": "Update a variant's inventory information by product ID using user input",
                   "body":
                     [ "/****************",
                       " * backend code *",
@@ -2748,7 +2747,7 @@
                       " * \t}",
                       " */" ],
                   "extra":
-                    { "description": "a variant's inventory information by product ID using user input.  \n This example assumes the following elements exist on the page: \n\n \n + Text boxes for entering the product ID and the inventory amount.\n + Checkboxes for indicating if inventory is being tracked and if an item is in-stock.\n + A drop-down for displaying a product's variants.  \n + Buttons for populating the drop-down and for performing the update." } } ],
+                    { "description": "This example assumes the following elements exist on the page: \n\n \n + Text boxes for entering the product ID and the inventory amount.\n + Checkboxes for indicating if inventory is being tracked and if an item is in-stock.\n + A drop-down for displaying a product's variants.  \n + Buttons for populating the drop-down and for performing the update." } } ],
             "extra":
               {  } },
         "extra":
@@ -9530,7 +9529,7 @@
               [ "[updateInventoryVariantFields( )](#updateInventoryVariantFields)",
                 "[updateInventoryVariantFieldsByExternalId( )](#updateInventoryVariantFieldsByExternalId)" ],
             "examples":
-              [ { "title": "Update a variant's inventory information by inventory ID.",
+              [ { "title": "Update a variant's inventory information by inventory ID",
                   "body":
                     [ "/****************",
                       " * backend code *",
@@ -9661,7 +9660,7 @@
                       " */" ],
                   "extra":
                     {  } },
-                { "title": "Update a variant's inventory information by inventory ID according to how it is being tracked.",
+                { "title": "Update a variant's inventory information by inventory ID according to how it is being tracked",
                   "body":
                     [ "/****************",
                       " * backend code *",
@@ -9945,7 +9944,8 @@
               "doc": "Date the inventory item was last updated." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "InventoryItemVariantInfo",
         "locations":
           [ { "lineno": 36,
