@@ -2298,9 +2298,9 @@
           [ { "name": "inventoryId",
               "type": "string",
               "doc": "Inventory ID of the item with variants to update." },
-            { "name": "inventoryItemVariantInfo",
+            { "name": "inventoryInfo",
               "type": "wix-stores-backend.InventoryItemVariantInfo",
-              "doc": "The information to update in the variant." } ],
+              "doc": "The inventory information to update in the variant." } ],
         "ret":
           { "type":
               { "name": "Promise",
@@ -2308,7 +2308,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the items are updated.\nRejected - Error message." },
         "locations":
-          [ { "lineno": 54,
+          [ { "lineno": 52,
               "filename": "inventory.js" } ],
         "docs":
           { "summary": "Updates an existing inventory item's variants by inventory ID.",
@@ -2558,7 +2558,7 @@
           [ { "name": "productId",
               "type": "string",
               "doc": "The corresponding product ID for the inventory item in a Wix store." },
-            { "name": "inventoryItemVariantInfo",
+            { "name": "inventoryInfo",
               "type": "wix-stores-backend.InventoryItemVariantInfo",
               "doc": "The information to update in the variant." } ],
         "ret":
@@ -2568,7 +2568,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the items are updated.\nRejected - Error message." },
         "locations":
-          [ { "lineno": 84,
+          [ { "lineno": 82,
               "filename": "inventory.js" } ],
         "docs":
           { "summary": "Updates an existing inventory item's variants by product ID.",
@@ -4988,8 +4988,7 @@
               "doc": "Value of the coupon discount.\n>>>>>>> master" } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "CartBuyerInfo",
         "locations":
           [ { "lineno": 57,
@@ -9946,11 +9945,10 @@
               "doc": "Date the inventory item was last updated." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "InventoryItemVariantInfo",
         "locations":
-          [ { "lineno": 38,
+          [ { "lineno": 36,
               "filename": "inventory.js" } ],
         "docs":
           { "links": [],
@@ -9969,11 +9967,10 @@
               "doc": "Inventory item variants." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "InventoryItemVariantItem",
         "locations":
-          [ { "lineno": 45,
+          [ { "lineno": 43,
               "filename": "inventory.js" } ],
         "docs":
           { "summary": "An object representing an inventory item's variant.",
