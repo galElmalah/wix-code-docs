@@ -1,0 +1,41 @@
+{ "name": "bookingsReader",
+  "memberOf": "wix-bookings-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 519,
+      "filename": "all.js" },
+  "docs":
+    { "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "listByContacts",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "listByContactsRequest",
+              "type": "wix-bookings-backend.ListByContactsRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.ListByContactsResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 523,
+              "filename": "all.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }

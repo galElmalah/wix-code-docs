@@ -1,0 +1,156 @@
+{ "name": "resources",
+  "memberOf": "wix-bookings-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 2034,
+      "filename": "all.js" },
+  "docs":
+    { "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "batchCreate",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "batchCreateResourceRequest",
+              "type": "wix-bookings-backend.BatchCreateResourceRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.BatchCreateResourceResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1884,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Creates multiple resources with corresponding schedules.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "batchDelete",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "batchDeleteResourceRequest",
+              "type": "wix-bookings-backend.BatchDeleteResourceRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.BatchDeleteResourceResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1904,
+              "filename": "all.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "create",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "createResourceRequest",
+              "type": "wix-bookings-backend.CreateResourceRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.CreateResourceResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1924,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Creates a resource.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "delete",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "deleteResourceRequest",
+              "type": "wix-bookings-backend.DeleteResourceRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.DeleteResourceResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1944,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Deletes a resource. Deleting a resource cancels its schedule.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "list",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "listResourcesRequest",
+              "type": "wix-bookings-backend.ListResourcesRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.ListResourcesResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 2016,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Queries the business' resources.  \nThe query is optional, if no query is provided than the non-deleted resources will be returned.  \nQuery object support:  \n- filter: supports \"resource.id\", \"resource.tag\", \"resource.status\".  \n- paging: supported.  \n- fields: supported.  \n- paging: not supported.  \n- fields: not supported.  \n- fieldsets: not supported.\n\n> **Permissions**  \n> This endpoint requires the Read Bookings Calendar, Read Bookings - Public Data, Read Bookings - Including Participants or Manage Bookings permission scope.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "update",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "updateResourceRequest",
+              "type": "wix-bookings-backend.UpdateResourceRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.UpdateResourceResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 2054,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Updates a resource. Can be used also to update the resource's schedules.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }

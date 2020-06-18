@@ -1,0 +1,41 @@
+{ "name": "businessCatalog",
+  "memberOf": "wix-bookings-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 2072,
+      "filename": "all.js" },
+  "docs":
+    { "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "get",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "getBusinessRequest",
+              "type": "wix-bookings-backend.GetBusinessRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.GetBusinessResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 2076,
+              "filename": "all.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }

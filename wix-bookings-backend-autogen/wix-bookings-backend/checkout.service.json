@@ -1,0 +1,156 @@
+{ "name": "checkout",
+  "memberOf": "wix-bookings-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1145,
+      "filename": "all.js" },
+  "docs":
+    { "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "calculate",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "calculateRequest",
+              "type": "wix-bookings-backend.CalculateRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.CalculateResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 866,
+              "filename": "all.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "cancel",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "cancelRequest",
+              "type": "wix-bookings-backend.CancelRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.CancelResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 886,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Change payment balance on an existing checkout.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "checkout",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "checkoutRequest",
+              "type": "wix-bookings-backend.CheckoutRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.CheckoutResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 913,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "a new checkout for a booking with given details.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "checkoutOptions",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "checkoutOptionsRequest",
+              "type": "wix-bookings-backend.CheckoutOptionsRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.CheckoutOptionsResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1112,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Calculates checkout options available to book and check out the given session/schedule.\n> **Permissions**  \n> This endpoint requires the Read Bookings - Public Data, Read Bookings - Including Participants or Manage Bookings permission scope.  \n To calculate the Wix Paid Plans available for a site member using the `contactId` field, the Manage Bookings permission scope is required.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "createOfflineOrder",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "createOfflineOrderRequest",
+              "type": "wix-bookings-backend.CreateOfflineOrderRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.CreateOfflineOrderResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1138,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Create an offline payment transaction",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "update",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "updateRequest",
+              "type": "wix-bookings-backend.UpdateRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.UpdateResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1162,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Change payment balance on an existing checkout.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }

@@ -1,0 +1,42 @@
+{ "name": "bulk",
+  "memberOf": "wix-bookings-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 2061,
+      "filename": "all.js" },
+  "docs":
+    { "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "get",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "bulkRequest",
+              "type": "wix-bookings-backend.BulkRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.BulkResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 2065,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Gets the entire data available in the services and business catalog",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }

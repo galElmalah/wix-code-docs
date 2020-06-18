@@ -1,0 +1,505 @@
+{ "name": "schedules",
+  "memberOf": "wix-bookings-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1841,
+      "filename": "all.js" },
+  "docs":
+    { "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "addParticipant",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "addParticipantRequest",
+              "type": "wix-bookings-backend.AddParticipantRequest",
+              "doc": "Participants" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.AddParticipantResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1375,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Adds a participant to a schedule or to a specific session.  \n> **Permissions**  \n> This endpoint requires the Manage Bookings permissions scope",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "assignWiXUserAsScheduleOwner",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "assignWiXUserAsScheduleOwnerRequest",
+              "type": "wix-bookings-backend.AssignWiXUserAsScheduleOwnerRequest",
+              "doc": "schedule owner" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.AssignWiXUserAsScheduleOwnerResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1402,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Assign wix user to schedule owner id.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "batch",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "batchRequest",
+              "type": "wix-bookings-backend.BatchRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.BatchResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1429,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Create update and cancel multiple schedules.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "batchCancel",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "batchCancelScheduleRequest",
+              "type": "wix-bookings-backend.BatchCancelScheduleRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.BatchCancelScheduleResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1450,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Cancels multiple schedules.  \nBy applying this method, the given schedule move to a CANCELLED status which means that all sessions up until. \nthe cancellation point in time are kept, while removing all following sessions.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "batchCreate",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "batchCreateScheduleRequest",
+              "type": "wix-bookings-backend.BatchCreateScheduleRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.BatchCreateScheduleResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1473,
+              "filename": "all.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "cancel",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "cancelScheduleRequest",
+              "type": "wix-bookings-backend.CancelScheduleRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.CancelScheduleResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1488,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Cancels a schedule. Equivalent to batch cancel of sessions linked to a single schedule.  \nThe schedule changes to status = CANCELED -  all sessions up until the time of cancellation are kept, and all future sessions are removed.  \n> **Permissions**  \n> This endpoint requires the Manage Bookings permissions scope",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "create",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "createScheduleRequest",
+              "type": "wix-bookings-backend.CreateScheduleRequest",
+              "doc": "schedule" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.CreateScheduleResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1514,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Creates a schedule.\n> **Permissions**  \n> This endpoint requires the Manage Bookings permissions scope",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "createSession",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "createSessionRequest",
+              "type": "wix-bookings-backend.CreateSessionRequest",
+              "doc": "Schedule's session" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.CreateSessionResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1539,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Creates a session (adds a session to a schedule).  \n> **Permissions**  \n> This endpoint requires the Manage Bookings permissions scope",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "deleteSession",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "deleteSessionRequest",
+              "type": "wix-bookings-backend.DeleteSessionRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.DeleteSessionResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1564,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Deletes a session from a schedule.  \n> **Permissions**  \n> This endpoint requires the Manage Bookings permissions scope",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "get",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "getScheduleRequest",
+              "type": "wix-bookings-backend.GetScheduleRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.GetScheduleResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1587,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Returns a schedule from the calendar.  \n> **Permissions**  \n> This endpoint requires the Read Bookings Calendar or the Manage Bookings permissions scope.  \n> With the Read Bookings Calendar permission scope, the schedule participants are not returned.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "getSession",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "getSessionRequest",
+              "type": "wix-bookings-backend.GetSessionRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.GetSessionResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1611,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Returns a session from the calendar.  \n> **Permissions**   \n> This endpoint requires the Read Bookings Calendar or the Manage Bookings permission scope.  \n> With the Read Bookings Calendar permission scope, the session participants are not returned.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "list",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "listSchedulesRequest",
+              "type": "wix-bookings-backend.ListSchedulesRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.ListSchedulesResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1637,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Lists schedules by schedule IDs or schedule owner IDs.\n> **Permissions**  \n> This endpoint requires the Read Bookings Calendar or the Manage Bookings  permission scope.  \n> With the Read Bookings Calendar permission scope, the schedule participants are not returned.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "listSessions",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "listSessionsRequest",
+              "type": "wix-bookings-backend.ListSessionsRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.ListSessionsResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1662,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Returns multiple sessions from the calendar.\n> **Permissions**  \n> This endpoint requires the Read Bookings Calendar or the Manage Bookings permission scope\n> With the Read Bookings Calendar permission scope, the sessions return without participants.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "migrate",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "migrateRequest",
+              "type": "wix-bookings-backend.MigrateRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.MigrateResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1692,
+              "filename": "all.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "removeParticipant",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "removeParticipantRequest",
+              "type": "wix-bookings-backend.RemoveParticipantRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.RemoveParticipantResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1712,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Removes a participant from a schedule or from a specific session.  \n> **Permissions**  \n> This endpoint requires the Manage Bookings permissions scope",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "splitInterval",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "splitIntervalRequest",
+              "type": "wix-bookings-backend.SplitIntervalRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.SplitIntervalResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1737,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Splits an existing interval into two or more parts.\n> **Permissions**  \n> This endpoint requires the Manage Bookings permissions scope",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "unAssignWiXUserFromScheduleOwner",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "unAssignWiXUserFromScheduleOwnerRequest",
+              "type": "wix-bookings-backend.UnAssignWiXUserFromScheduleOwnerRequest",
+              "doc": "schedule owner" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.UnAssignWiXUserFromScheduleOwnerResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1763,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "remove wix user assignment from schedule owenr id.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "update",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "updateScheduleRequest",
+              "type": "wix-bookings-backend.UpdateScheduleRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.UpdateScheduleResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1779,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Updates a schedule.  \nThis method supports patch semantics. The field values you specify replace the existing values.  \nFields that you don’t specify in the request remain unchanged.  \n Array fields, if specified, overwrite the existing arrays; this discards any previous array elements.\n> **Permissions**  \n> This endpoint requires the Manage Bookings permissions scope",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "updateInterval",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "updateIntervalRequest",
+              "type": "wix-bookings-backend.UpdateIntervalRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.UpdateIntervalResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1806,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Updates an existing recurring interval.\n> **Permissions**  \n> This endpoint requires the Manage Bookings permissions scope",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "updateParticipant",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "updateParticipantRequest",
+              "type": "wix-bookings-backend.UpdateParticipantRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.UpdateParticipantResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1830,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Updates participant details.  \n The field values you specify replace the existing values. Fields that you don’t specify in the request remain unchanged.  \nArray fields, if specified, overwrite the existing arrays; this discards any previous array elements.  \n> **Permissions**  \n> This endpoint requires the Manage Bookings permissions scope",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "updateSession",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "updateSessionRequest",
+              "type": "wix-bookings-backend.UpdateSessionRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.UpdateSessionResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1859,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Updates a session.  \nThe field values you specify replace the existing values. Fields that you don’t specify in the request remain unchanged.  \n Array fields, if specified, overwrite the existing arrays; this discards any previous array elements.  \n> **Permissions**  \n> This endpoint requires the Manage Bookings permissions scope",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }

@@ -1,0 +1,88 @@
+{ "name": "calendar",
+  "memberOf": "wix-bookings-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 803,
+      "filename": "all.js" },
+  "docs":
+    { "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "listAvailableSlots",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "listAvailableSlotsRequest",
+              "type": "wix-bookings-backend.ListAvailableSlotsRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.ListAvailableSlotsResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 744,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Returns the schedule's available slots, calculated by the schedule's availability specification.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "listSessions",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "listSessionsRequest",
+              "type": "wix-bookings-backend.ListSessionsRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.ListSessionsResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 768,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Returns sessions from the business calendar.  \nQuery object support:  \n- **filter**: supports\n  - `scheduleId`: Optional.\n  - `from`: query range start time. Required.\n  - `to`: query range end time. Required.\n  - `tags`: filter by list of tags\n  - `scheduleOwnerIds`: the response will contain sessions with the given scheduleOwnerIds and sessions with affectedSchedules with the given scheduleOwnerIds.\n  - `transparency`: when applied, the `scheduleOwnerIds` filter is required. In case the transparency = BUSY, the response will contain sessions with the given scheduleOwnerIds and sessions with affectedSchedules with the given scheduleOwnerIds where the owner's transparency is BUSY.\n    When transparency = FREE, the response will contain only sessions and affectedSchedules with the given scheduleOwnerIds when the owner's transparency is FREE.\n- **fields**: supported.\n- **paging**: Paging is supported using the page token. For paging the results, i.e. with a page size of 10, set the `query.paging.limit` to a value of `10`.\n    The response will contain a value in the `nextPageToken` field. Pass this value in the `pageToken` field in the following calls and leave the `query` field empty.\n- **fieldsets**: not supported.\n*Query filter example:**\n```\n{\n  \"$and\": [{ \n      \"scheduleId\": \"66a2674c-9267-4600-826e-f463957b9446\" }, \n      { \"from\": \"2019-02-17T13:08:43.000Z\" }, \n      { \"to\": \"2019-02-17T14:08:43.000Z\" }, \n      { \"tags\": [\"GROUP\"]}, \n      { \"scheduleOwnerIds: [\"66a2674c-9267-4600-826e-f463957b9446\", \"66a2674c-9267-4600-826e-f463957b9447\"]}\n]}\n```\n\n> **Permissions**\n> The API requires CALENDAR.READ_SCHEDULES_SESSIONS",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "listSlots",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "listSlotsRequest",
+              "type": "wix-bookings-backend.ListSlotsRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.ListSlotsResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 820,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Returns the schedule slots, calculated by the schedule's availability specification.  \nQuery object support:  \n- **filter**: supports\n  - `scheduleIds`: scheduleIds represent the schedule of the sessions. Required.\n    The Min list size is 1. all other filters are optional.\n  - `from`: query range start time\n  - `to`: query range end time\n  - `isAvailable`: By default returned slots will include full capacity sessions. Filter.isAvailable = false is not supported.\n- **fields**: supported.\n- **paging**: Paging is supported using the page token. For paging the results, i.e. with a page size of 10, set the `query.paging.limit` to a value of `10`.\n  The response will contain a value in the `nextPageToken` field. Pass this value in the `pageToken` field in the following calls and leave the `query` field empty.\n- **fieldsets**: not supported.\n*Query filter example:**\n```\n{\"scheduleIds\": [\"66a2674c-9267-4600-826e-f463957b9446\", \"66a2674c-9267-4600-826e-f463957b9447\"] , \"from\": \"2019-02-17T13:08:43.000Z\" , \"to\": \"2019-02-17T14:08:43.000Z\",\"isAvailable\": true}).\n```\n\n> **Permissions**\n> This endpoint requires the Read Bookings Calendar Availability, Read Bookings Calendar, Read Bookings - Public Data, Read Bookings - Including Participants or Manage Bookings permission scope.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }

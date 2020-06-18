@@ -1,0 +1,133 @@
+{ "name": "sync",
+  "memberOf": "wix-bookings-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1331,
+      "filename": "all.js" },
+  "docs":
+    { "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "list",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "listStatusRequest",
+              "type": "wix-bookings-backend.ListStatusRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.ListStatusResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1259,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Lists the statuses of all sync requests in the Wix site.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "refreshCalendar",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "refreshCalendarRequest",
+              "type": "wix-bookings-backend.RefreshCalendarRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.RefreshCalendarResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1280,
+              "filename": "all.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "sendSyncEmail",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "sendSyncEmailRequest",
+              "type": "wix-bookings-backend.SendSyncEmailRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.SendSyncEmailResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1303,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Sends an email to the external calendar owner requesting sync approval.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "syncStatus",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "syncStatusRequest",
+              "type": "wix-bookings-backend.SyncStatusRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.SyncStatusResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1324,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Gets the sync status for an external calendar.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "unSync",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "unSyncRequest",
+              "type": "wix-bookings-backend.UnSyncRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.UnSyncResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1347,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "Removes the sync to/from an external calendar.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }

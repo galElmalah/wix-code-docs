@@ -1,0 +1,42 @@
+{ "name": "externalCalendarEvents",
+  "memberOf": "wix-bookings-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1169,
+      "filename": "all.js" },
+  "docs":
+    { "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "listEvents",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "listEventsRequest",
+              "type": "wix-bookings-backend.ListEventsRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.ListEventsResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1238,
+              "filename": "all.js" } ],
+        "docs":
+          { "summary": "> **Permissions**  \n > This endpoint requires the Manage Bookings permission scope.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }
