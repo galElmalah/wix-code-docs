@@ -62,7 +62,7 @@
             "links":
               [ "[addProductMediaToChoices()](#addProductMediaToChoices)" ],
             "examples":
-              [ { "title": "Add media items to a product.",
+              [ { "title": "Add media items to a product",
                   "body":
                     [ "/****************",
                       " * backend code *",
@@ -110,7 +110,8 @@
         "extra":
           {  } },
       { "name": "addProductMediaToChoices",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "productId",
@@ -139,7 +140,7 @@
             "links":
               [ "[addProductMedia()](#addProductMedia)" ],
             "examples":
-              [ { "title": "Add media items to product options.",
+              [ { "title": "Add media items to product options",
                   "body":
                     [ "/****************",
                       " * backend code *",
@@ -211,7 +212,7 @@
                 " With this function, you can only add existing products to a collection. You cannot use the `addProductsToCollection()` function to create a product. See [`createProduct()`](#createProduct) to add a product to the store." ],
             "links": [],
             "examples":
-              [ { "title": "Add products to a product collection.",
+              [ { "title": "Add products to a product collection",
                   "body":
                     [ "/****************",
                       " * backend code *",
@@ -452,8 +453,7 @@
         "extra":
           {  } },
       { "name": "createOrder",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "orderInfo",
@@ -911,7 +911,7 @@
             "links":
               [ "[getProduct()]($w.ProductPage.html#getProduct)" ],
             "examples":
-              [ { "title": "Create a new product.",
+              [ { "title": "Create a new product",
                   "body":
                     [ "/****************",
                       " * Backend code *",
@@ -1059,7 +1059,7 @@
                       "*/" ],
                   "extra":
                     {  } },
-                { "title": "Full flow for creating a new product.",
+                { "title": "Full flow for creating a new product",
                   "body":
                     [ "/****************",
                       " * Backend code *",
@@ -1435,7 +1435,8 @@
         "extra":
           {  } },
       { "name": "deleteProduct",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "productId",
@@ -1457,7 +1458,7 @@
                 " product with the given ID is deleted." ],
             "links": [],
             "examples":
-              [ { "title": "Delete a product by ID.",
+              [ { "title": "Delete a product by ID",
                   "body":
                     [ "import wixStoresBackend from 'wix-stores-backend';",
                       "",
@@ -1936,7 +1937,8 @@
         "extra":
           {  } },
       { "name": "getProductVariants",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "productId",
@@ -1962,7 +1964,7 @@
                 " choices or variant IDs are retrieved." ],
             "links": [],
             "examples":
-              [ { "title": "Get product variants by specified choices.",
+              [ { "title": "Get product variants by specified choices",
                   "body":
                     [ "/*****************************",
                       " * backend code - stores.jsw *",
@@ -2046,7 +2048,7 @@
                       " */" ],
                   "extra":
                     {  } },
-                { "title": "Get product variants by variant IDs.",
+                { "title": "Get product variants by variant IDs",
                   "body":
                     [ "/*****************************",
                       " * backend code - stores.jsw *",
@@ -2130,7 +2132,7 @@
                       " */" ],
                   "extra":
                     {  } },
-                { "title": "Get product variants using paging options.",
+                { "title": "Get product variants using paging options",
                   "body":
                     [ "/*****************************",
                       " * backend code - stores.jsw *",
@@ -2259,7 +2261,7 @@
             "links":
               [ "[removeProductMediaFromChoices()](#removeProductMediaFromChoices)" ],
             "examples":
-              [ { "title": "Remove all media items from a product.",
+              [ { "title": "Remove all media items from a product",
                   "body":
                     [ "/****************",
                       " * backend code *",
@@ -2339,7 +2341,7 @@
             "links":
               [ "[removeProductMedia()](#removeProductMedia)" ],
             "examples":
-              [ { "title": "Remove media items from product choices.",
+              [ { "title": "Remove media items from product choices",
                   "body":
                     [ "/****************",
                       " * backend code *",
@@ -2419,7 +2421,7 @@
                 " Removing products from a collection does not delete the products from the store.  See [`deleteProduct()`](#deleteProduct) to delete a product from the store." ],
             "links": [],
             "examples":
-              [ { "title": "Remove products from a product collection.",
+              [ { "title": "Remove products from a product collection",
                   "body":
                     [ "/****************",
                       " * backend code *",
@@ -2455,7 +2457,8 @@
         "extra":
           {  } },
       { "name": "resetVariantData",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "productId",
@@ -2477,7 +2480,7 @@
                 " variants have been reset." ],
             "links": [],
             "examples":
-              [ { "title": "Reset the data of a variant to their default values.",
+              [ { "title": "Reset the data of a variant to their default values",
                   "body":
                     [ "import wixStoresBackend from 'wix-stores-backend';",
                       "",
@@ -3166,7 +3169,8 @@
           { "notes":
               [ "You can also update a variant's inventory by inventory ID instead of product ID using the [`updateInventoryVariantFields()`](#updateInventoryVariantFields) function." ] } },
       { "name": "updateProductFields",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "productId",
@@ -3194,7 +3198,7 @@
                 " be updated. All other properties will remain the same." ],
             "links": [],
             "examples":
-              [ { "title": "Update a product.",
+              [ { "title": "Update a product",
                   "body":
                     [ "import wixStoresBackend from 'wix-stores-backend';",
                       "",
@@ -3257,7 +3261,7 @@
                 " be updated. All other properties remain the same." ],
             "links": [],
             "examples":
-              [ { "title": "Update the data of a variant.",
+              [ { "title": "Update the data of a variant",
                   "body":
                     [ "/****************",
                       " * backend code *",
@@ -3674,8 +3678,7 @@
               "doc": "The time the update (activity) occurred." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Activity",
         "locations":
           [ { "lineno": 10,
@@ -4048,8 +4051,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "AppliedCoupon",
         "locations":
           [ { "lineno": 456,
@@ -4336,8 +4338,7 @@
               "doc": "Coupon name." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "BillingInfo",
         "locations":
           [ { "lineno": 237,
@@ -4663,8 +4664,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "BuyerInfo",
         "locations":
           [ { "lineno": 105,
@@ -4961,8 +4961,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Cart",
         "locations":
           [ { "lineno": 1,
@@ -6544,8 +6543,7 @@
               "doc": "Sales channel that submitted the order.\nOne of:\n\n\n + `\"WEB\"`: Wix online store.\n + `\"POS\"`: Point of sale.\n + `\"EBAY\"`: eBay.\n + `\"OTHER_PLATFORM\"`: Order imported from another system (e.g., Cart2Cart).\n + `\"WIX_APP_STORE\"`: Order created via the Wix mobile app." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Choice",
         "locations":
           [ { "lineno": 356,
@@ -6900,8 +6898,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "CreateOrderBuyerInfo",
         "locations":
           [ { "lineno": 91,
@@ -7185,8 +7182,7 @@
               "doc": "Buyer's identity.\nOne of:\n\n + `\"MEMBER\"`: A logged-in site member.\n + `\"CONTACT\"`: A Wix contact." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "CreateOrderLineItem",
         "locations":
           [ { "lineno": 391,
@@ -7534,8 +7530,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "CreateOrderLineItemPriceData",
         "locations":
           [ { "lineno": 283,
@@ -7819,8 +7814,7 @@
               "doc": "Whether the price includes tax." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "CreateOrderMediaItem",
         "locations":
           [ { "lineno": 339,
@@ -8110,8 +8104,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "CreateOrderTotals",
         "locations":
           [ { "lineno": 436,
@@ -8407,8 +8400,7 @@
               "doc": "Total price." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Currency",
         "locations":
           [ { "lineno": 72,
@@ -8919,8 +8911,7 @@
               "doc": "Custom field's text." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "CustomTextField",
         "locations":
           [ { "lineno": 348,
@@ -9204,8 +9195,7 @@
               "doc": "Field value." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Discount",
         "locations":
           [ { "lineno": 465,
@@ -9486,8 +9476,7 @@
               "doc": "Information about an applied coupon." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "EnteredBy",
         "locations":
           [ { "lineno": 204,
@@ -9771,8 +9760,7 @@
               "doc": "Order was created by one of the following:\n\n\n  + `\"USER\"`: Wix user who performed a POS transaction on behalf of the buyer.\n  + `\"MEMBER\"`: Logged-in site member.\n  + `\"CONTACT\"`: A Wix contact." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Fulfillment",
         "locations":
           [ { "lineno": 65,
@@ -10236,8 +10224,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "FulfillmentInfo",
         "locations":
           [ { "lineno": 65,
@@ -11161,8 +11148,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "InventoryItem",
         "locations":
           [ { "lineno": 1,
@@ -12113,8 +12099,7 @@
               "doc": "Whether the price includes tax." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Media",
         "locations":
           [ { "lineno": 327,
@@ -12123,7 +12108,7 @@
           { "summary": "An object representing the media item for a product.",
             "links": [],
             "examples":
-              [ { "title": "Add media to a product choice.",
+              [ { "title": "Add media to a product choice",
                   "body":
                     [ "/****************",
                       " * backend code *",
@@ -12262,8 +12247,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "NewFulfillmentOrder",
         "locations":
           [ { "lineno": 56,
@@ -12741,8 +12725,7 @@
               "doc": "Selected option." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Order",
         "locations":
           [ { "lineno": 17,
@@ -13105,8 +13088,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "OrderBuyerInfo",
         "locations":
           [ { "lineno": 105,
@@ -13735,8 +13717,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "OrderLineItem",
         "locations":
           [ { "lineno": 356,
@@ -14093,8 +14074,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "OrderMediaItem",
         "locations":
           [ { "lineno": 328,
@@ -14390,8 +14370,7 @@
               "doc": "Media item type. Currently only `\"IMAGE\"` type supported." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "OrderShippingInfo",
         "locations":
           [ { "lineno": 255,
@@ -14689,8 +14668,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "OrderTotals",
         "locations":
           [ { "lineno": 130,
@@ -14886,7 +14864,7 @@
             "links":
               [ "[getProductVariants()]($w.ProductPage.html#getProductVariants)" ],
             "examples":
-              [ { "title": "Get product variants using paging options.",
+              [ { "title": "Get product variants using paging options",
                   "body":
                     [ "/*****************************",
                       " * backend code - stores.jsw *",
@@ -14984,7 +14962,8 @@
               "doc": "Number of variants to skip before the retrieved variants. Defaults to 0." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "PickupDetails",
         "locations":
           [ { "lineno": 307,
@@ -15286,8 +15265,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Product",
         "locations":
           [ { "lineno": 18,
@@ -15298,7 +15276,7 @@
               [ "[createProduct()](#createProduct)",
                 "[getProduct()]($w.ProductPage.html#getProduct)" ],
             "examples":
-              [ { "title": "Create a new product.",
+              [ { "title": "Create a new product",
                   "body":
                     [ "/****************",
                       " * Backend code *",
@@ -15583,8 +15561,7 @@
               "doc": "Value of the choice. This key name is dependent on the product option. For example, if a product has a size option, this\n key value will be something like `\"Size\"` and its value will be something like\n `\"Large\"`.\n\n `optionKey` is not case-sensitive. Therefore the values for the option keys \"`Size`\", \"`SIZE`\", and \"`size`\" are combined." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "ProductCustomTextFields",
         "locations":
           [ { "lineno": 56,
@@ -15625,8 +15602,7 @@
               "doc": "Discount value. The discount value cannot be greater than the price of the product or the variant." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "ProductInfo",
         "locations":
           [ { "lineno": 103,
@@ -15669,8 +15645,7 @@
               "doc": "Product weight." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "ProductOption",
         "locations":
           [ { "lineno": 170,
@@ -15738,8 +15713,7 @@
               "doc": "Name of the option. This key name\n is dependent on the options added to the product. For example, if a product has a size\n option, this key will be something like `\"Size\"`.\n\n `optionKey` is not case-sensitive. Therefore the values for the option keys \"`Size`\", \"`SIZE`\",\n and \"`size`\" are combined.\n\n An option cannot be changed if it has choices and variants. To change an option, reset its variants\n with [`resetVariantData()`](wix-stores-backend.html#resetVariantData).\n For each option, you can define a maximum of six choices." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "ProductOptionsAvailability",
         "locations":
           [ { "lineno": 200,
@@ -15749,7 +15723,7 @@
             "links":
               [ "[getProductOptionsAvailability()](#getProductOptionsAvailability)" ],
             "examples":
-              [ { "title": "Get a product's availability information.",
+              [ { "title": "Get a product's availability information",
                   "body":
                     [ "/****************",
                       " * backend code *",
@@ -15847,7 +15821,8 @@
               "doc": "The variant of the product selected using the specified option choices if there is one." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "ProductOptionsAvailabilitySelectedVariant",
         "locations":
           [ { "lineno": 212,
@@ -15857,7 +15832,7 @@
             "links":
               [ "[getProductOptionsAvailability()](#getProductOptionsAvailability)" ],
             "examples":
-              [ { "title": "Get a product's availability information.",
+              [ { "title": "Get a product's availability information",
                   "body":
                     [ "/****************",
                       " * backend code *",
@@ -15983,7 +15958,8 @@
               "doc": "Product variant weight." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "ProductOptionsChoice",
         "locations":
           [ { "lineno": 191,
@@ -16009,8 +15985,7 @@
               "doc": "Indicates whether the product with this option is visible.  When adding a product, this property is read-only." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "ProductOptionsChoiceMedia",
         "locations":
           [ { "lineno": 204,
@@ -16049,8 +16024,7 @@
               "doc": "Name of the option. This key name is dependent on the options added to the product. For example, if a product has a color or size option, this key will be something like `\"Color\"` or `\"Size\"`.\n\n `optionKey` is not case-sensitive. Therefore the values for the option keys \"`Size`\", \"`SIZE`\", and \"`size`\" are combined." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "ProductRibbon",
         "locations":
           [ { "lineno": 96,
@@ -16078,7 +16052,7 @@
             "links":
               [ "[getProductVariants()](#getProductVariants)" ],
             "examples":
-              [ { "title": "Get product variants using paging options.",
+              [ { "title": "Get product variants using paging options",
                   "body":
                     [ "/*****************************",
                       " * backend code - stores.jsw *",
@@ -16182,7 +16156,8 @@
               "doc": "Paging options." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "ShipmentDetails",
         "locations":
           [ { "lineno": 291,
@@ -16500,8 +16475,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "ShipmentPriceData",
         "locations":
           [ { "lineno": 266,
@@ -16785,8 +16759,7 @@
               "doc": "Whether the price includes tax." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "ShippingInfo",
         "locations":
           [ { "lineno": 82,
@@ -17325,8 +17298,7 @@
               "doc": "Address street number." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Totals",
         "locations":
           [ { "lineno": 423,
@@ -17628,8 +17600,7 @@
               "doc": "Total weight of the order's items." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "TrackingInfo",
         "locations":
           [ { "lineno": 87,
@@ -18364,8 +18335,7 @@
               "doc": "VAT type. Either `\"CPF\"` or `\"CNPJ\"`." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] } ],
+        "labels": [] } ],
   "extra":
     {  },
   "menuSections": "APIs",
