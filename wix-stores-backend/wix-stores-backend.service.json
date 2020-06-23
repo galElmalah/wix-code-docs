@@ -1,7 +1,6 @@
 { "name": "wix-stores-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "products.js" },
@@ -5114,8 +5113,7 @@
               "doc": "The order's units of weight. One of: `\"KG\"`, `\"LB\"`, or `\"UNSPECIFIED_WEIGHT_UNIT\"`." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "CartAddress",
         "locations":
           [ { "lineno": 19,
@@ -5827,8 +5825,7 @@
               "doc": "Field value." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "CartLineItem",
         "locations":
           [ { "lineno": 94,
@@ -5996,8 +5993,7 @@
               "doc": "Custom text." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "CartMediaItem",
         "locations":
           [ { "lineno": 120,
@@ -6388,8 +6384,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "ChannelInfo",
         "locations":
           [ { "lineno": 168,
