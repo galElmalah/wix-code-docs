@@ -109,8 +109,7 @@
         "extra":
           {  } },
       { "name": "addProductMediaToChoices",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "productId",
@@ -4964,7 +4963,7 @@
         "docs":
           { "summary": "An object representing a shopping cart.",
             "links":
-              [ "[getCurrentCart( )](#getCurrentCart)" ],
+              [ "[getCurrentCart()](#getCurrentCart)" ],
             "examples":
               [ { "title": "Get the current site visitor's cart",
                   "body":
@@ -5115,7 +5114,8 @@
               "doc": "The order's units of weight. One of: `\"KG\"`, `\"LB\"`, or `\"UNSPECIFIED_WEIGHT_UNIT\"`." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "CartAddress",
         "locations":
           [ { "lineno": 19,
@@ -5703,7 +5703,7 @@
         "docs":
           { "summary": "An object representing a custom text field.",
             "links":
-              [ "[getCurrentCart( )](#getCurrentCart)" ],
+              [ "[getCurrentCart()](#getCurrentCart)" ],
             "examples":
               [ { "title": "Get the current site visitor's cart",
                   "body":
@@ -5827,7 +5827,8 @@
               "doc": "Field value." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "CartLineItem",
         "locations":
           [ { "lineno": 94,
@@ -5835,7 +5836,7 @@
         "docs":
           { "summary": "An object representing a line item in a shopping cart.",
             "links":
-              [ "[getCurrentCart( )](#getCurrentCart)" ],
+              [ "[getCurrentCart()](#getCurrentCart)" ],
             "examples":
               [ { "title": "Get the current site visitor's cart",
                   "body":
@@ -5995,7 +5996,8 @@
               "doc": "Custom text." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "CartMediaItem",
         "locations":
           [ { "lineno": 120,
@@ -6140,7 +6142,7 @@
         "docs":
           { "summary": "An object representing shipping information.",
             "links":
-              [ "[onCartCompleted( )](#onCartCompleted)" ],
+              [ "[onCartCompleted()](#onCartCompleted)" ],
             "examples":
               [ { "title": "Get the current site visitor's cart",
                   "body":
@@ -6386,7 +6388,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "ChannelInfo",
         "locations":
           [ { "lineno": 168,
@@ -10094,8 +10097,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "FulfillmentInfo",
         "locations":
           [ { "lineno": 65,
@@ -10291,8 +10293,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "FulfillmentLineItem",
         "locations":
           [ { "lineno": 85,
@@ -10488,8 +10489,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "InventoryItem",
         "locations":
           [ { "lineno": 1,
@@ -11493,8 +11493,7 @@
               "doc": "A choice of the product variant." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "MediaChoices",
         "locations":
           [ { "lineno": 319,

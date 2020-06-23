@@ -635,8 +635,7 @@
           { "notes":
               [ "Backend events don't work when previewing your site." ] } },
       { "name": "onInventoryItemUpdated",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -1021,7 +1020,7 @@
         "docs":
           { "summary": "An object representing a shopping cart that was abandoned.",
             "links":
-              [ "[onCartAbandoned( )](#onCartAbandoned)" ],
+              [ "[onCartAbandoned()](#onCartAbandoned)" ],
             "examples":
               [ { "title": "An event when a shopping cart is abandoned",
                   "body":
@@ -1089,7 +1088,8 @@
               "doc": "Abandoned cart totals." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "CartCompletedEvent",
         "locations":
           [ { "lineno": 183,
@@ -1097,7 +1097,7 @@
         "docs":
           { "summary": "An object representing a shopping cart that was completed.",
             "links":
-              [ "[onCartCreated( )](#onCartRecovered)" ],
+              [ "[onCartCreated()](#onCartRecovered)" ],
             "examples":
               [ { "title": "An event with shipping details when a shopping cart is completed",
                   "body":
@@ -1250,11 +1250,12 @@
               "type": "wix-stores-backend.OrderTotals",
               "doc": "The shopping cart's totals." },
             { "name": "shippingInfo",
-              "type": "wix-stores-backend.ShippingInfo",
+              "type": "wix-stores-backend.CartShippingInfo",
               "doc": "The shopping cart's shipping information." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "CartCreatedEvent",
         "locations":
           [ { "lineno": 154,
@@ -1262,7 +1263,7 @@
         "docs":
           { "summary": "An object representing a shopping cart that was created.",
             "links":
-              [ "[onCartCreated( )](#onCartCreated)" ],
+              [ "[onCartCreated()](#onCartCreated)" ],
             "examples":
               [ { "title": "An event when a shopping cart is created",
                   "body":
@@ -1322,7 +1323,8 @@
               "doc": "The shopping cart's totals." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "CartRecoveredEvent",
         "locations":
           [ { "lineno": 128,
@@ -1330,7 +1332,7 @@
         "docs":
           { "summary": "An object representing a shopping cart that was recovered.",
             "links":
-              [ "[onCartRecovered( )](#onCartRecovered)" ],
+              [ "[onCartRecovered()](#onCartRecovered)" ],
             "examples":
               [ { "title": "An event when an abandoned shopping cart is recovered",
                   "body":
@@ -1369,7 +1371,8 @@
               "doc": "Time the cart was recovered." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "CartTotals",
         "locations":
           [ { "lineno": 101,
@@ -1377,7 +1380,7 @@
         "docs":
           { "summary": "An object representing the totals of a shopping cart.",
             "links":
-              [ "[onCartAbandoned( )](#onCartAbandoned)" ],
+              [ "[onCartAbandoned()](#onCartAbandoned)" ],
             "examples":
               [ { "title": "An event when a shopping cart is abandoned",
                   "body":
@@ -1430,7 +1433,8 @@
               "doc": "Total formatted with currency symbol." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "CollectionCreatedEvent",
         "locations":
           [ { "lineno": 291,
@@ -1556,7 +1560,7 @@
         "docs":
           { "summary": "An object representing fulfillment information that was created.",
             "links":
-              [ "[onFulfillmentCreated( )](#onFulfillmentCreated)" ],
+              [ "[onFulfillmentCreated()](#onFulfillmentCreated)" ],
             "examples":
               [ { "title": "An event when a fulfillment is created",
                   "body":
@@ -1617,7 +1621,8 @@
               "doc": "The order's current fulfillment status.\nOne of:\n\n + `\"NOT_FULFILLED\"`: Order is not yet fulfilled.\n + `\"FULFILLED\"`: Order was fulfilled successfully.\n + `\"CANCELLED\"`: Order was cancelled.\n + `\"PARTIALLY_FULFILLED\"`: Order was partially fulfilled. For example, when only some of the order's items were fulfilled." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "FulfillmentDeletedEvent",
         "locations":
           [ { "lineno": 520,
@@ -1625,7 +1630,7 @@
         "docs":
           { "summary": "An object representing fulfillment information that was deleted.",
             "links":
-              [ "[onFulfillmentDeleted( )](#onFulfillmentDeleted)" ],
+              [ "[onFulfillmentDeleted()](#onFulfillmentDeleted)" ],
             "examples":
               [ { "title": "An event when a fulfillment is deleted",
                   "body":
@@ -1662,7 +1667,8 @@
               "doc": "The order's current fulfillment status.\nOne of:\n\n + `\"NOT_FULFILLED\"`: Order is not yet fulfilled.\n + `\"FULFILLED\"`: Order was fulfilled successfully.\n + `\"CANCELLED\"`: Order was cancelled.\n + `\"PARTIALLY_FULFILLED\"`: Order was partially fulfilled. For example, when only some of the order's items were fulfilled." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "FulfillmentUpdatedEvent",
         "locations":
           [ { "lineno": 497,
@@ -1670,7 +1676,7 @@
         "docs":
           { "summary": "An object representing fulfillment information that was updated.",
             "links":
-              [ "[onFulfillmentUpdate( )](#onFulfillmentUpdated)" ],
+              [ "[onFulfillmentUpdate()](#onFulfillmentUpdated)" ],
             "examples":
               [ { "title": "An event when a fulfillment is updated",
                   "body":
@@ -1712,7 +1718,8 @@
               "doc": "Tracking information." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "InventoryItemUpdatedEvent",
         "locations":
           [ { "lineno": 401,
@@ -1753,8 +1760,7 @@
               "doc": "Whether the item's inventory is tracked." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "InventoryVariantUpdatedEvent",
         "locations":
           [ { "lineno": 424,
@@ -1812,8 +1818,7 @@
               "doc": "List of variants that were updated." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "NewOrderEvent",
         "locations":
           [ { "lineno": 49,
@@ -1821,7 +1826,7 @@
         "docs":
           { "summary": "An object representing a new order from a store.",
             "links":
-              [ "[onNewOrder( )](#onNewOrder)" ],
+              [ "[onNewOrder()](#onNewOrder)" ],
             "examples":
               [ { "title": "An event when a new order is placed",
                   "body":
@@ -1895,7 +1900,8 @@
               "doc": "The order's fulfillment status. One of: `\"FULFILLED\"` or `\"NOT_FULFILLED\"`." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "ProductChoices",
         "locations":
           [ { "lineno": 375,
