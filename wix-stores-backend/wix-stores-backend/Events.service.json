@@ -483,8 +483,7 @@
           { "notes":
               [ "Backend events don't work when previewing your site." ] } },
       { "name": "onFulfillmentCreated",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -543,8 +542,7 @@
           { "notes":
               [ "Backend events don't work when previewing your site." ] } },
       { "name": "onFulfillmentDeleted",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -588,8 +586,7 @@
           { "notes":
               [ "Backend events don't work when previewing your site." ] } },
       { "name": "onFulfillmentUpdated",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -638,7 +635,8 @@
           { "notes":
               [ "Backend events don't work when previewing your site." ] } },
       { "name": "onInventoryItemUpdated",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -661,15 +659,15 @@
                     [ "// Place this code in the events.js file",
                       "// of your site's Backend section.",
                       "",
-                      "export function wixStores_onVariantsUpdated(event) {",
+                      "export function wixStores_onInventoryItemUpdated(event) {",
                       "  let inventoryItemId = event.inventoryItemId;",
                       "}",
                       "",
                       "/*  Full event object:",
-                      " *  { ",
+                      " *  {",
+                      " *    \"inventoryItemId\":\"70170fa0-6ae1-ea9c-46e8-775207d7babc\",",
                       " *    \"externalId\":\"8fe8f05f-951e-1563-b917-88adf8284543\",",
-                      " *    \"trackInventory\":true,",
-                      " *    \"inventoryItemId\":\"70170fa0-6ae1-ea9c-46e8-775207d7babc\"",
+                      " *    \"trackInventory\":true",
                       " *  }",
                       " */" ],
                   "extra":
@@ -1619,8 +1617,7 @@
               "doc": "The order's current fulfillment status.\nOne of:\n\n + `\"NOT_FULFILLED\"`: Order is not yet fulfilled.\n + `\"FULFILLED\"`: Order was fulfilled successfully.\n + `\"CANCELLED\"`: Order was cancelled.\n + `\"PARTIALLY_FULFILLED\"`: Order was partially fulfilled. For example, when only some of the order's items were fulfilled." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "FulfillmentDeletedEvent",
         "locations":
           [ { "lineno": 520,
@@ -1665,8 +1662,7 @@
               "doc": "The order's current fulfillment status.\nOne of:\n\n + `\"NOT_FULFILLED\"`: Order is not yet fulfilled.\n + `\"FULFILLED\"`: Order was fulfilled successfully.\n + `\"CANCELLED\"`: Order was cancelled.\n + `\"PARTIALLY_FULFILLED\"`: Order was partially fulfilled. For example, when only some of the order's items were fulfilled." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "FulfillmentUpdatedEvent",
         "locations":
           [ { "lineno": 497,
@@ -1716,8 +1712,7 @@
               "doc": "Tracking information." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "InventoryItemUpdatedEvent",
         "locations":
           [ { "lineno": 401,
@@ -1731,15 +1726,15 @@
                     [ "// Place this code in the events.js file",
                       "// of your site's Backend section.",
                       "",
-                      "export function wixStores_onVariantsUpdated(event) {",
+                      "export function wixStores_onInventoryItemUpdated(event) {",
                       "  let inventoryItemId = event.inventoryItemId;",
                       "}",
                       "",
                       "/*  Full event object:",
-                      " *  { ",
+                      " *  {",
+                      " *    \"inventoryItemId\":\"70170fa0-6ae1-ea9c-46e8-775207d7babc\",",
                       " *    \"externalId\":\"8fe8f05f-951e-1563-b917-88adf8284543\",",
-                      " *    \"trackInventory\":true,",
-                      " *    \"inventoryItemId\":\"70170fa0-6ae1-ea9c-46e8-775207d7babc\"",
+                      " *    \"trackInventory\":true",
                       " *  }",
                       " */" ],
                   "extra":
@@ -1752,13 +1747,14 @@
               "doc": "ID of the inventory item." },
             { "name": "externalId",
               "type": "string",
-              "doc": "External ID of the inventory item. For example, the product ID for\\n inventory items which are store products." },
+              "doc": "External ID of the inventory item. For example, the product ID for inventory items which are store products." },
             { "name": "trackInventory",
               "type": "boolean",
               "doc": "Whether the item's inventory is tracked." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "InventoryVariantUpdatedEvent",
         "locations":
           [ { "lineno": 424,
@@ -1807,7 +1803,7 @@
               "doc": "ID of the inventory item." },
             { "name": "externalId",
               "type": "string",
-              "doc": "External ID of the inventory item. For example, the product ID for\\n inventory items which are store products." },
+              "doc": "External ID of the inventory item. For example, the product ID for inventory items which are store products." },
             { "name": "variants",
               "type":
                 { "name": "Array",
@@ -1816,7 +1812,8 @@
               "doc": "List of variants that were updated." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "NewOrderEvent",
         "locations":
           [ { "lineno": 49,
