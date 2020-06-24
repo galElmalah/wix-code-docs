@@ -1,6 +1,7 @@
 { "name": "top-level-namespace",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "removed" ],
   "location":
     { "lineno": 2,
       "filename": "main.js" },
