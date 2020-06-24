@@ -2,14 +2,14 @@
   "memberOf": "wix-test-jdoc",
   "mixes": [],
   "labels":
-    [ "new" ],
+    [ "changed" ],
   "location":
     { "lineno": 29,
       "filename": "main.js" },
   "docs":
-    { "summary": "The nested namespace summary",
+    { "summary": "The namespace summary",
       "description":
-        [ "the nested namespace description" ],
+        [ "the namespace description" ],
       "links": [],
       "examples": [],
       "extra":
@@ -26,7 +26,7 @@
         "ret":
           { "type": "Promise" },
         "locations":
-          [ { "lineno": 42,
+          [ { "lineno": 44,
               "filename": "main.js" } ],
         "docs":
           { "summary": "Should be at the nested level",
@@ -42,7 +42,7 @@
   "messages":
     [ { "name": "SomeNestedObject",
         "locations":
-          [ { "lineno": 35,
+          [ { "lineno": 37,
               "filename": "main.js" } ],
         "docs":
           { "summary": "An nested object summary",
