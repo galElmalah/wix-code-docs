@@ -1,35 +1,37 @@
-{ "name": "wix-test-jdoc",
+{ "name": "nested",
+  "memberOf": "wix-test-jdoc",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "new" ],
   "location":
-    { "lineno": 2,
+    { "lineno": 29,
       "filename": "main.js" },
   "docs":
-    { "summary": "The namespace summary",
+    { "summary": "The nested namespace summary",
       "description":
-        [ "the namespace description" ],
+        [ "the nested namespace description" ],
       "links": [],
       "examples": [],
       "extra":
         {  } },
   "properties": [],
   "operations":
-    [ { "name": "topLevelFuntion",
+    [ { "name": "nestedFunction",
         "labels": [],
         "nameParams": [],
         "params":
-          [ { "name": "someObject",
-              "type": "wix-test-jdoc.SomeObject",
-              "doc": "The object" } ],
+          [ { "name": "someNestedObject",
+              "type": "wix-test-jdoc.nested.SomeObject",
+              "doc": "The nested object" } ],
         "ret":
           { "type": "Promise" },
         "locations":
-          [ { "lineno": 17,
+          [ { "lineno": 42,
               "filename": "main.js" } ],
         "docs":
-          { "summary": "Should be at the top level",
+          { "summary": "Should be at the nested level",
             "description":
-              [ "This is a top level function." ],
+              [ "This is a nested function" ],
             "links": [],
             "examples": [],
             "extra":
@@ -38,14 +40,14 @@
           {  } } ],
   "callbacks": [],
   "messages":
-    [ { "name": "SomeObject",
+    [ { "name": "SomeNestedObject",
         "locations":
-          [ { "lineno": 8,
+          [ { "lineno": 35,
               "filename": "main.js" } ],
         "docs":
-          { "summary": "An object summary",
+          { "summary": "An nested object summary",
             "description":
-              [ "An object description" ],
+              [ "An nested object description" ],
             "links": [],
             "examples": [],
             "extra":
@@ -53,14 +55,7 @@
         "members":
           [ { "name": "name",
               "type": "string",
-              "doc": "A string" },
-            { "name": "value",
-              "type": "string",
-              "doc": "Another string" },
-            { "name": "description",
-              "type": "string",
-              "doc": "An optional string",
-              "optional": true } ],
+              "doc": "A string" } ],
         "extra":
           {  },
         "labels": [] } ],
