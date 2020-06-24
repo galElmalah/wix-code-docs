@@ -1,7 +1,7 @@
-{ "name": "top-level-namespace",
+{ "name": "wix-test-jdoc",
   "mixes": [],
   "labels":
-    [ "removed" ],
+    [ "new" ],
   "location":
     { "lineno": 2,
       "filename": "main.js" },
@@ -20,7 +20,7 @@
         "nameParams": [],
         "params":
           [ { "name": "someObject",
-              "type": "top-level-namespace.SomeObject",
+              "type": "wix-test-jdoc.SomeObject",
               "doc": "The object" } ],
         "ret":
           { "type": "Promise" },
@@ -64,7 +64,6 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] } ],
+        "labels": [] } ],
   "extra":
     {  } }
