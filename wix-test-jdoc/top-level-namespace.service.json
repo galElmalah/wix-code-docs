@@ -1,12 +1,15 @@
 { "name": "top-level-namespace",
   "mixes": [],
   "labels":
-    [ "removed" ],
+    [ "new" ],
   "location":
     { "lineno": 2,
       "filename": "main.js" },
   "docs":
-    { "links": [],
+    { "summary": "The namespace summary",
+      "description":
+        [ "the namespace description" ],
+      "links": [],
       "examples": [],
       "extra":
         {  } },
@@ -22,7 +25,7 @@
         "ret":
           { "type": "Promise" },
         "locations":
-          [ { "lineno": 14,
+          [ { "lineno": 17,
               "filename": "main.js" } ],
         "docs":
           { "summary": "Should be at the top level",
@@ -38,10 +41,12 @@
   "messages":
     [ { "name": "SomeObject",
         "locations":
-          [ { "lineno": 6,
+          [ { "lineno": 8,
               "filename": "main.js" } ],
         "docs":
-          { "summary": "An object",
+          { "summary": "An object summary",
+            "description":
+              [ "An object description" ],
             "links": [],
             "examples": [],
             "extra":
@@ -59,6 +64,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] } ],
+        "labels":
+          [ "changed" ] } ],
   "extra":
     {  } }
