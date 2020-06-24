@@ -1,0 +1,71 @@
+{ "name": "FormSubmitErrorEvent",
+  "memberOf": "wix-crm.formbuilder.WixForms",
+  "mixes":
+    [ "$w.Event" ],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 114,
+      "filename": "form.js" },
+  "docs":
+    { "summary": "Event that is fired when the Wix form is not submitted successfully due to error.",
+      "description":
+        [ "A `FormSubmitErrorEvent` event occurs when the user presses a submit button on a `WixForms` element but the Wix form is not successfully submitted." ],
+      "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties":
+    [ { "name": "code",
+        "labels": [],
+        "get": true,
+        "set": false,
+        "type": "string",
+        "locations":
+          [ { "lineno": 124,
+              "filename": "form.js" } ],
+        "docs":
+          { "summary": "Gets the error code for a failed Wix form submission.",
+            "links": [],
+            "examples":
+              [ { "title": "An event when a Wix form is submitted",
+                  "body":
+                    [ "$w(\"#myWixForm\").onWixFormSubmittedError( (event) => {",
+                      "  let err = event.target.code;",
+                      "  let errMessage = event.target.message;",
+                      "});" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "message",
+        "labels": [],
+        "get": true,
+        "set": false,
+        "type": "string",
+        "locations":
+          [ { "lineno": 133,
+              "filename": "form.js" } ],
+        "docs":
+          { "summary": "Gets the error message for a failed Wix form submission.",
+            "links": [],
+            "examples":
+              [ { "title": "An event when a Wix form is submitted",
+                  "body":
+                    [ "$w(\"#myWixForm\").onWixFormSubmittedError( (event) => {",
+                      "  let err = event.target.code;",
+                      "  let errMessage = event.target.message;",
+                      "});" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "operations": [],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }

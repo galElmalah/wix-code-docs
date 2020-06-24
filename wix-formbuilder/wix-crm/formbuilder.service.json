@@ -1,0 +1,33 @@
+{ "name": "formbuilder",
+  "memberOf": "wix-crm",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1,
+      "filename": "form.js" },
+  "docs":
+    { "summary": "The XXX...",
+      "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations": [],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  },
+  "menuSections": "APIs",
+  "displayName": "$w.WixForms",
+  "relatedContent":
+    [ { "icon": "article",
+        "text": "Adding and Setting Up a Wix Form on Your Site",
+        "url": "https://support.wix.com/en/article/adding-and-setting-up-a-form-on-your-site" } ],
+  "FAQs":
+    [ { "title": "What is the difference between a Wix Form and a form I created on my own with code?",
+        "markdown": "Wix Forms is an app solution that provides you with a built-in suite of form functionality, such as an out-of-the-box submission button, creation of a collection, and auto-generated emails after submission. See [About Wix Forms](https://support.wix.com/en/article/about-wix-forms) to learn about the benefits of using Wix Forms. To provide your site visitors and members with a customized form experience, you can create forms manually by using Corvid to add user input elements and buttons to the page, and by coding their usage to act like a form. When designing a form manually, you have access to some functionality that is not yet available in the Wix Forms app." },
+      { "title": "When should I use the `WixForm` element and when should I create forms manually?",
+        "markdown": "Use the WixForm element to take advantage of the app's ease of design, automatic creation of submission collections, accepting payments, automatic setup of email notifications, and more. See [About Wix Forms](https://support.wix.com/en/article/about-wix-forms) to learn about the benefits of using Wix Forms. Create forms manually to totally control the site user's experience, and access some functionality that is not yet available in the Wix Forms app, without upgrading your site." },
+      { "title": "What's the difference between `onWixFormSubmitted()` in a page's code and `onFormSubmit()` in the Backend section's code?",
+        "markdown": "[`onWixFormSubmitted()`]($w.WixFormSubmitted.html) in a page's code provides information and functionality available only on the client side, such as field names and field values. It can perform operations only at the client side, such as clearing the fields of a form after submission. `onFormSubmit()` in your site's Backend section's code provides additional information that the page does not have, such as the form submission time and the contact ID." } ] }

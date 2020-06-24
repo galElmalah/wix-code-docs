@@ -1,0 +1,23 @@
+{ "name": "FormSubmitEvent",
+  "memberOf": "wix-crm.formbuilder.WixForms",
+  "mixes":
+    [ "$w.Event" ],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 105,
+      "filename": "form.js" },
+  "docs":
+    { "summary": "Event that is fired when the Wix form is submitted.",
+      "description":
+        [ "A `FormSubmitEvent` event occurs when the user presses a submit button on a `WixForms` element." ],
+      "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations": [],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }

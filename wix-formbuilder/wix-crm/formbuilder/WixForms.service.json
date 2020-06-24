@@ -1,0 +1,162 @@
+{ "name": "WixForms",
+  "memberOf": "wix-crm.formbuilder",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 7,
+      "filename": "form.js" },
+  "docs":
+    { "summary": "An element for working with Wix Forms.",
+      "description":
+        [ "`WixForms` lets site members enter values for fields in a Wix Form and then submit it. ",
+          " ",
+          " This `WixForms` API works together with forms created using the [Wix Forms app](https://support.wix.com/en/article/about-wix-forms). ",
+          " Using this API lets you customize how site visitors can work with the form, while ",
+          " taking advantage of the app's ease of design, automatic creation of  ",
+          " submission tables, accepting payments, automatic setup of email notifications, and more. ",
+          " ",
+          " The `WixForms` API does not use functionality provided by [`FormElement`]($w.FormElement.html), ",
+          " but the user input elements wrapped within the `WixForms` element can. For example, you cannot check if a Wix Form has changed ",
+          " using [`onChange`](#onChange), but you can check if one of the Wix form's fields did.",
+          "",
+          " Alternatively, you can use the Corvid API to manually customize your own forms and connect the form's fields to collections. You  ",
+          " customize your own forms using standard input elements and buttons for submission. When designing your own forms, you have ",
+          " options that might not yet be available from the Wix Forms app and its `WixForms` element." ],
+      "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "onFormSubmitted",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "eventHandler",
+              "type": "wix-crm.formbuilder.WixForms.FormSubmitEventHandler",
+              "doc": "The name of the function or\n the function expression to run when a Wix form is submitted." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 33,
+              "filename": "form.js" } ],
+        "docs":
+          { "summary": "Adds an event handler that fires when a user successfully submits a Wix form.",
+            "description":
+              [ "When the site member submits a Wix form, the field values are cleared and the `onFormSubmitted`",
+                " callback is triggered for the `WixForms` element. The received",
+                " [`FormSubmitEvent`](#FormSubmitEvent) object",
+                " contains information about the Wix form that was submitted. The `FormSubmitEvent` object is returned by the callback asynchronously right after ",
+                " verification of a successful submission.",
+                " The callback to run when the Wix form was submitted is either the name of the function",
+                " or a function expression." ],
+            "links":
+              [ "[#onFormSubmittedError](#onFormSubmittedError)" ],
+            "examples":
+              [ { "title": "An event triggered on a WixForms element when the Wix form is submitted",
+                  "body":
+                    [ "$w(\"#myWixForm\").onWixFormSubmitted( (fields) => {",
+                      "  let elementId = fields[0].id;",
+                      "  let fieldName = fields[0].fieldName;",
+                      "  let fieldValue = fields[0].fieldValue;",
+                      "});" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "eventType": "FormSubmitErrorEvent" } },
+      { "name": "onFormSubmittedError",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "eventHandler",
+              "type": "wix-crm.formbuilder.WixForms.FormSubmitErrorEventHandler",
+              "doc": "The name of the function or\n the function expression to run when a Wix form is not submitted due to error." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 54,
+              "filename": "form.js" } ],
+        "docs":
+          { "summary": "Adds an event handler that fires when a user is not able to successfully submit a Wix form.",
+            "description":
+              [ "If a Wix form has not been successfully submitted by the user, the received",
+                " [`FormSubmitErrorEvent`](#FormSubmitErrorEvent) object",
+                " contains error information about why the Wix form could not be submitted. The `FormSubmitErrorEvent` object is returned by the callback asynchronously right after ",
+                " ßan unsuccessful submission.",
+                " The `onFormSubmitError` callback is triggered for the WixForms element. The callback is either the name of the",
+                " function or a function expression.",
+                "",
+                " **Error Codes and Descriptions**",
+                "",
+                "",
+                " * INVALID_FIELD. A field value was not entered correctly by the user.",
+                " * FILE\\_NOT\\_UPLOADED. A file or signature upload did not succeed.",
+                " * INVALID_ARGUMENT. An internal server error occurred.",
+                " * UNAUTHENTICATED. The user's identity is not authenticated.",
+                " * PERMISSION_DENIED. The user does not have permissions to submit the Wix form, such as the CAPTCHA challenge was not verified.",
+                " * RESOURCE_EXHAUSTED. The request to submit the Wix form was denied by the server to prevent overload and improve overall performance.",
+                " * UNAVAILABLE. The service is not available.",
+                " * UNKNOWN_ERROR. An unknown error occurred." ],
+            "links":
+              [ "[#onFormSubmitted](#onFormSubmitted)" ],
+            "examples":
+              [ { "title": "An event triggered on a WixForms element when the Wix form is submitted",
+                  "body":
+                    [ "$w(\"#myWixForm\").onWixFormSubmittedError( (event) => {",
+                      "  let err = event.target.code;",
+                      "  let errMessage = event.target.message;",
+                      "});" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "eventType": "FormSubmitError" } } ],
+  "callbacks":
+    [ { "name": "FormSubmitErrorEventHandler",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-crm.formbuilder.WixForms.FormSubmitErrorEvent",
+              "doc": "The Wix Forms event that occurred." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 97,
+              "filename": "form.js" } ],
+        "docs":
+          { "summary": "Handles events fired when the Wix form is not submitted due to error.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "FormSubmitEventHandler",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-crm.formbuilder.WixForms.FormSubmitEvent",
+              "doc": "The Wix Forms event that occurred." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 90,
+              "filename": "form.js" } ],
+        "docs":
+          { "summary": "Handles events fired when the Wix form is submitted.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "messages": [],
+  "extra":
+    { "notes":
+        [ "To work with a `WixForms` element using the API, you must first \n<a href=\"https://support.wix.com/en/article/adding-and-setting-up-a-form-on-your-site\" target=\"_blank\">add and set up a Wix form on your site</a>." ] } }
