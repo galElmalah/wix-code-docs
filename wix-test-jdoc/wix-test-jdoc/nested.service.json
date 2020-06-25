@@ -2,7 +2,8 @@
   "memberOf": "wix-test-jdoc",
   "mixes": [],
   "labels":
-    [ "changed" ],
+    [ "changed",
+      "removed" ],
   "location":
     { "lineno": 29,
       "filename": "main.js" },
