@@ -2,7 +2,7 @@
   "memberOf": "root-module",
   "mixes": [],
   "labels":
-    [ "new" ],
+    [ "removed" ],
   "location":
     { "lineno": 5,
       "filename": "main.js" },

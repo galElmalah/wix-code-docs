@@ -1,7 +1,7 @@
 { "name": "root-module",
   "mixes": [],
   "labels":
-    [ "new" ],
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "main.js" },
@@ -13,10 +13,11 @@
         {  } },
   "properties":
     [ { "name": "sub",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": false,
-        "type": "root-module.sub-ns",
+        "type": "root-module.sub",
         "locations":
           [ { "lineno": 9,
               "filename": "main.js" } ],

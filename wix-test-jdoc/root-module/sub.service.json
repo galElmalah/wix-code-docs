@@ -1,0 +1,78 @@
+{ "name": "sub",
+  "memberOf": "root-module",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 5,
+      "filename": "main.js" },
+  "docs":
+    { "summary": "a nested namespace inside the root module",
+      "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties":
+    [ { "name": "propOfSubNs",
+        "labels": [],
+        "get": true,
+        "set": false,
+        "type": "string",
+        "locations":
+          [ { "lineno": 15,
+              "filename": "main.js" } ],
+        "docs":
+          { "summary": "a property of the sub namespace",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "operations":
+    [ { "name": "createSecret",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "secret",
+              "type": "object",
+              "doc": "The object including the fields of a new secret to be stored." } ],
+        "ret":
+          { "type": "Promise" },
+        "locations":
+          [ { "lineno": 28,
+              "filename": "main.js" } ],
+        "docs":
+          { "summary": "Creates a new secret.",
+            "description":
+              [ "The createSecret() function returns a Promise that resolves to the newly created secret's ID when a secret has been created in the <a href=\"https://support.wix.com/en/article/corvid-working-with-the-secrets-manager\">Secrets Manager</a>.",
+                "Secrets created by this function are available in the Secrets Manager section in your site's dashboard, just like any other secret created using the UI." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "funcOfSubNs",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "someString",
+              "type": "string" } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 21,
+              "filename": "main.js" } ],
+        "docs":
+          { "summary": "a function of the sub namespace",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }
