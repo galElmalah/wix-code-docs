@@ -1,0 +1,63 @@
+{ "name": "servicesPolicy",
+  "memberOf": "wix-bookings-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1,
+      "filename": "update.js" },
+  "docs":
+    { "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "get",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "getPolicyRequest",
+              "type": "wix-bookings-backend.GetPolicyRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.GetPolicyResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 14,
+              "filename": "get.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "update",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "updatePolicyRequest",
+              "type": "wix-bookings-backend.UpdatePolicyRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.UpdatePolicyResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 14,
+              "filename": "update.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }

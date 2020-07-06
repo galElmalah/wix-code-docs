@@ -1,0 +1,159 @@
+{ "name": "waitingList",
+  "memberOf": "wix-bookings-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1,
+      "filename": "register.js" },
+  "docs":
+    { "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "enroll",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "enrollRequest",
+              "type": "wix-bookings-backend.EnrollRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.EnrollResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 219,
+              "filename": "enroll.js" } ],
+        "docs":
+          { "summary": "Books a site member into the session for which they are waitlisted (waiting resource), and the associated booking is checked out.",
+            "description":
+              [ "Waitlist registration status is changed to ENROLLED.",
+                "> **Permissions**  ",
+                "> This endpoint requires the Manage Bookings permissions scope" ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "join",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "joinRequest",
+              "type": "wix-bookings-backend.JoinRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.JoinResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 18,
+              "filename": "join.js" } ],
+        "docs":
+          { "summary": "Registers a site member to a wait-list.",
+            "description":
+              [ "This API is only available for site-members.",
+                " When invoking this API the following takes place:  ",
+                " - Validating that the requested session is defined and has a waitlist option.  ",
+                " - Validating the waitlist has enough capacity.  ",
+                " - A new Booking is created in PENDING state.  ",
+                " - A new registration is added to the waitlist.",
+                "> **Permissions**  ",
+                "> This endpoint requires the Manage Bookings permissions scope" ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "leave",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "leaveRequest",
+              "type": "wix-bookings-backend.LeaveRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.LeaveResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 17,
+              "filename": "leave.js" } ],
+        "docs":
+          { "summary": "Removes a site member's registration to a waitlist (and cancels the associated pending-state booking).",
+            "description":
+              [ "If a spot has become available for booking and the server is SUGGESTING registration to waitlist registrants, the next member registered to the waitlist will receive an invitation to the opened spot.",
+                "> **Permissions**   ",
+                "> This endpoint requires the Manage Bookings permissions scope" ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "list",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "listWaitingListRequest",
+              "type": "wix-bookings-backend.ListWaitingListRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.ListWaitingListResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 60,
+              "filename": "list.js" } ],
+        "docs":
+          { "summary": "Returns a list of waitlisted entries.",
+            "description":
+              [ "Each WaitingListEntry returned holds the current Waitlist registrations, configuration and suggesting status.",
+                "> **Permissions**  ",
+                "> This endpoint requires the Read Bookings - Public Data permissions scope" ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "register",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "registerRequest",
+              "type": "wix-bookings-backend.RegisterRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.RegisterResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 20,
+              "filename": "register.js" } ],
+        "docs":
+          { "summary": "Registers a site member to a waitlist.",
+            "description":
+              [ "If the requested session does not have a waitlist, or if the waitlist is already full, an error is received.",
+                "> **Permissions**   ",
+                "> This endpoint requires the Manage Bookings permissions scope" ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }

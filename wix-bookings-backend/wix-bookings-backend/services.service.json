@@ -1,0 +1,230 @@
+{ "name": "services",
+  "memberOf": "wix-bookings-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1,
+      "filename": "update.js" },
+  "docs":
+    { "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "batchCreate",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "batchCreateServiceRequest",
+              "type": "wix-bookings-backend.BatchCreateServiceRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.BatchCreateServiceResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 15,
+              "filename": "batchCreate.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "batchDelete",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "batchDeleteServiceRequest",
+              "type": "wix-bookings-backend.BatchDeleteServiceRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.BatchDeleteServiceResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 14,
+              "filename": "batchDelete.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "batchUpdate",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "batchUpdateRequest",
+              "type": "wix-bookings-backend.BatchUpdateRequest",
+              "doc": "Updated a set of services" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.BatchUpdateResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 28,
+              "filename": "batchUpdate.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "bulkFix",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "bulkFixInput",
+              "type": "wix-bookings-backend.BulkFixInput" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.BulkFixInput" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 16,
+              "filename": "bulkFix.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "create",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "createServiceRequest",
+              "type": "wix-bookings-backend.CreateServiceRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.CreateServiceResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 10,
+              "filename": "create.js" } ],
+        "docs":
+          { "summary": "Creates a service",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "delete",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "deleteServiceRequest",
+              "type": "wix-bookings-backend.DeleteServiceRequest",
+              "doc": "Delete s service" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.DeleteServiceResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 18,
+              "filename": "delete.js" } ],
+        "docs":
+          { "summary": "Deletes a service",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "get",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "getServiceRequest",
+              "type": "wix-bookings-backend.GetServiceRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.GetServiceResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 15,
+              "filename": "get.js" } ],
+        "docs":
+          { "summary": "Retrieves a service by Id",
+            "description":
+              [ "> **Permissions**",
+                "> This endpoint requires the Read Bookings - Public Data or Read Bookings - Including Participants permissions scope" ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "list",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "listServiceRequest",
+              "type": "wix-bookings-backend.ListServiceRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.ListServiceResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 15,
+              "filename": "list.js" } ],
+        "docs":
+          { "summary": "Lists all services in the business",
+            "description":
+              [ "> **Permissions**",
+                "> This endpoint requires the Read Bookings - Public Data or Read Bookings - Including Participants permissions scope" ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "update",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "updateServiceRequest",
+              "type": "wix-bookings-backend.UpdateServiceRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.UpdateServiceResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 52,
+              "filename": "update.js" } ],
+        "docs":
+          { "summary": "Updated a service",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }

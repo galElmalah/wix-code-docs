@@ -1,0 +1,108 @@
+{ "name": "availability",
+  "memberOf": "wix-bookings-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1,
+      "filename": "unlock.js" },
+  "docs":
+    { "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "isAvailable",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "isAvailableRequest",
+              "type": "wix-bookings-backend.IsAvailableRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.IsAvailableResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 34,
+              "filename": "isAvailable.js" } ],
+        "docs":
+          { "summary": "Returns the current availability of a requested entity.",
+            "description":
+              [ "Based on the requested entity, validate there is enough spots left.",
+                " When invoking on a locked session, availability is False.  ",
+                "",
+                " > **Permissions**   ",
+                " > This endpoint requires the Read Bookings - Public Data permission scope." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "lock",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "lockRequest",
+              "type": "wix-bookings-backend.LockRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.LockResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 15,
+              "filename": "lock.js" } ],
+        "docs":
+          { "summary": "Lock a session for bookings.",
+            "description":
+              [ "When invoking this API with a sessionId, it returns a key that will enable to book the given session.",
+                " Once the session is locked -  ",
+                " Only the holder of the right key will be able to Book or Checkout.  ",
+                " Calling IsAvailable returns as not available.  ",
+                " Invoking Bookings.Book, Bookings.Checkout APIs without the right key will fail.  ",
+                "",
+                " > **Permissions**   ",
+                " > This endpoint requires the Manage Bookings permission scope." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "unlock",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "unlockRequest",
+              "type": "wix-bookings-backend.UnlockRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.UnlockResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 15,
+              "filename": "unlock.js" } ],
+        "docs":
+          { "summary": "Unlock a locked session for bookings.",
+            "description":
+              [ "When invoking this API with a sessionId and its key, the session will be available for bookings.",
+                "",
+                " > **Permissions**   ",
+                " > This endpoint requires the Manage Bookings permission scope." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }
