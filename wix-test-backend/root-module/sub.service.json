@@ -1,0 +1,53 @@
+{ "name": "sub",
+  "memberOf": "root-module",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 5,
+      "filename": "test.js" },
+  "docs":
+    { "summary": "a nested namespace inside the root module",
+      "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties":
+    [ { "name": "propOfSubNs",
+        "labels": [],
+        "get": true,
+        "set": false,
+        "type": "string",
+        "locations":
+          [ { "lineno": 15,
+              "filename": "test.js" } ],
+        "docs":
+          { "summary": "a property of the sub namespace",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "operations":
+    [ { "name": "funcOfSubNs",
+        "labels": [],
+        "nameParams": [],
+        "params": [],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 21,
+              "filename": "test.js" } ],
+        "docs":
+          { "summary": "a function of the sub namespace",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }
