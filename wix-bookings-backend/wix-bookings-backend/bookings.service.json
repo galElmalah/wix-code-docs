@@ -1,0 +1,454 @@
+{ "name": "bookings",
+  "memberOf": "wix-bookings-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1,
+      "filename": "updateCustomerInfo.js" },
+  "docs":
+    { "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "book",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "bookRequest",
+              "type": "wix-bookings-backend.BookRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.BookResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 41,
+              "filename": "book.js" } ],
+        "docs":
+          { "summary": "Book a service.",
+            "description":
+              [ "This method has 2 modes of operation:",
+                " 1. Book by a customer.",
+                " 2. Book by the business (e.g. the business owner) on behalf of a customer.",
+                "",
+                " When the booking is done by the customer, the following takes place:",
+                " - Validation of the booking details according to the bookings policy and the service form mandatory fields.",
+                " - Payment rules are applied. It can be creating a new order in Wix Payments, or redeeming the given paid plan.",
+                "   When online payment is required, the response contains the details of which the user of this api can complete the payment using Wix Payment Service.",
+                " - When booking an approval required service, The booking is not charged until it is confirmed by the business.",
+                "   - BySessionId: The participant added to session is marked as PENDING until the booking is confirmed by the business.",
+                "   - Slot: A new session is created with affected availability based on the configuration defined in the service policy.",
+                "",
+                " > **Permissions**",
+                " > This endpoint requires the Read Bookings - Public data or the Manage Bookings permission scope.",
+                " > With the Read Bookings - Public data permission scope, a customer booking flow is applied.",
+                " > With the Manage Bookings permission scope, a business 'book on behalf' flow is applied." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "cancel",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "cancelBookingRequest",
+              "type": "wix-bookings-backend.CancelBookingRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.CancelBookingResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 33,
+              "filename": "cancel.js" } ],
+        "docs":
+          { "summary": "Cancel an existing booking.",
+            "description":
+              [ "When invoked by a customer flow, this action is validated against the service's bookings policy.",
+                " Cancelling a bookings triggers the following:",
+                " - The corresponding participant is removed from the session.",
+                " - If the booking was created from a slot (and not session id or schedule id), the corresponding session is deleted from the calendar.",
+                " - The booking status changes CANCELED.",
+                "",
+                " > **Permissions**",
+                " > This endpoint requires the Manage Bookings permission scope." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "checkout",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "checkoutBookingRequest",
+              "type": "wix-bookings-backend.CheckoutBookingRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.CheckoutBookingResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 20,
+              "filename": "checkout.js" } ],
+        "docs":
+          { "summary": "Checkout a booking.",
+            "description":
+              [ "When invoking this method the following takes place:",
+                " - The availability of the requested slot/session/schedule is validated.",
+                " - The Booking is charged, by creating a new order in Wix Payment Service, or by redeem the given paid plan.",
+                " - (Can happen asynchronously) On payment complete and according to the request and the current booking's state,",
+                "   A new session is created in the calendar, Or a participant is added to the selected session/schedule.",
+                " Note: In case the requested booked session is locked, the session key will be needed in order to Checkout the booking.",
+                "",
+                " > **Permissions**",
+                " > This endpoint requires the Manage Bookings permission scope." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "confirm",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "confirmBookingRequest",
+              "type": "wix-bookings-backend.ConfirmBookingRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.ConfirmBookingResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 17,
+              "filename": "confirm.js" } ],
+        "docs":
+          { "summary": "Confirm a booking request.",
+            "description":
+              [ "When invoking this API the following takes place:",
+                " - The participant status on the session changes to APPROVED.",
+                " - Slot availability is updated.",
+                " - The Booking status changes to CONFIRMED.",
+                " - The Booking is charged creating an offline-order in Wix Payment Service.",
+                "",
+                " > **Permissions**",
+                " > This endpoint requires the Manage Bookings permission scope." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "decline",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "declineBookingRequest",
+              "type": "wix-bookings-backend.DeclineBookingRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.DeclineBookingResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 17,
+              "filename": "decline.js" } ],
+        "docs":
+          { "summary": "Decline a booking request.",
+            "description":
+              [ "When invoking this API the following takes place:",
+                " - The participant status on the session changes to DECLINED.",
+                " - The corresponding session or participant is deleted from the calendar.",
+                "",
+                " - The Booking status changes to DECLINED.",
+                " > **Permissions**",
+                " > This endpoint requires the Manage Bookings permission scope." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "get",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "getRequest",
+              "type": "wix-bookings-backend.GetRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.GetResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 17,
+              "filename": "get.js" } ],
+        "docs":
+          { "summary": "Returns a Booking.",
+            "description":
+              [ "> **Permissions**",
+                "> The API requires BOOKINGS.READ_BOOKINGS permissions" ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "getAvailability",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "getAvailabilityRequest",
+              "type": "wix-bookings-backend.GetAvailabilityRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.GetAvailabilityResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 41,
+              "filename": "getAvailability.js" } ],
+        "docs":
+          { "summary": "Returns the current availability of a requested entity.",
+            "description":
+              [ "Based on the requested entity, validate there is enough spots left.",
+                " When invoking on a locked session, availability is False." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "list",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "listBookingsRequest",
+              "type": "wix-bookings-backend.ListBookingsRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.ListBookingsResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 6,
+              "filename": "list.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "listByContacts",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "listByContactsRequest",
+              "type": "wix-bookings-backend.ListByContactsRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.ListByContactsResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 6,
+              "filename": "listByContacts.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "lock",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "lockRequest",
+              "type": "wix-bookings-backend.LockRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.LockResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 16,
+              "filename": "lock.js" } ],
+        "docs":
+          { "summary": "Lock a session for bookings.",
+            "description":
+              [ "When invoking this API with a sessionId, it returns a key that will enable to book the given session.",
+                " Once the session is locked -",
+                " - Only the holder of the right key will be able to Book or Checkout.",
+                " - Calling GetAvailability returns as not available.",
+                " - Invoking Bookings.Book, Bookings.Checkout APIs without the right key will fail." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "reschedule",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "rescheduleRequest",
+              "type": "wix-bookings-backend.RescheduleRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.RescheduleResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 26,
+              "filename": "reschedule.js" } ],
+        "docs":
+          { "summary": "Reschedule a Booking.",
+            "description":
+              [ "When rescheduling a booking of a slot, the session on the calendar is updated as well.",
+                " Note: Rescheduling a booking to a schedule is not supported.",
+                "",
+                " > **Permissions**",
+                " > This endpoint requires the Manage Bookings permission scope." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "setAttendance",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "setAttendanceRequest",
+              "type": "wix-bookings-backend.SetAttendanceRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.SetAttendanceResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 17,
+              "filename": "setAttendance.js" } ],
+        "docs":
+          { "summary": "Set the booking attendance status.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "unLock",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "unLockRequest",
+              "type": "wix-bookings-backend.UnLockRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.UnLockResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 16,
+              "filename": "unLock.js" } ],
+        "docs":
+          { "summary": "Unlock a locked session for bookings.",
+            "description":
+              [ "When invoking this API with a sessionId and its key, the session will be available for bookings." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "update",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "updateBookingRequest",
+              "type": "wix-bookings-backend.UpdateBookingRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.UpdateBookingResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 48,
+              "filename": "update.js" } ],
+        "docs":
+          { "summary": "Updates an existing booking details, for the given bookingId.",
+            "description":
+              [ "When invoking this API the following flow happens internally:",
+                " - On Rescheduling a booking.",
+                "   - Based on invoker permission We validate the action against the service's booking policy.",
+                "   - When rescheduling a booking to a slot, We also update the created session time on the calendar.",
+                "   - When rescheduling a booking to a given session, We remove the participant from the previous session, and add him as a new one to the new requested session.",
+                "   - Rescheduling a booking to a schedule is not supported.",
+                "   - Finally, We publish OwnerRescheduledBooking or MemberRescheduledBooking based on the invoker permissions.",
+                " - On updating the booking's paid amount received -",
+                "   - This action is only allowed to a permitted user.",
+                "   - We update the payment in Wix Payment Service and the payment details of the booking.",
+                " - On updating the booking's form info -",
+                "   - This action is only allowed to a permitted user.",
+                "   - We update the participant details of the session on the calendar.",
+                "   - We override the bookings form info with the new given form info.",
+                "   - Finally, publish ownerUpdatedBookingFormInfo event.",
+                " - On updating the booking's attendance info -",
+                "   - This action is only allowed to a permitted user.",
+                "   - We update the booking attendance details and publish ownerUpdatedBookingAttendanceInfo event." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "updateCustomerInfo",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "updateCustomerInfoRequest",
+              "type": "wix-bookings-backend.UpdateCustomerInfoRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.UpdateCustomerInfoResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 17,
+              "filename": "updateCustomerInfo.js" } ],
+        "docs":
+          { "summary": "Update client’s information on a Booking.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }

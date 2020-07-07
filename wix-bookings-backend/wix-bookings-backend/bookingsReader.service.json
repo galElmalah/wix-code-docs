@@ -1,0 +1,99 @@
+{ "name": "bookingsReader",
+  "memberOf": "wix-bookings-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1,
+      "filename": "listByContacts.js" },
+  "docs":
+    { "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "list",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "listBookingsRequest",
+              "type": "wix-bookings-backend.ListBookingsRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.ListBookingsResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 6,
+              "filename": "list.js" } ],
+        "docs":
+          { "summary": "Returns a list of bookings; Based on the invoker permissions and the request query.",
+            "description":
+              [ "Query object support:",
+                "- **filter**: supports",
+                "  - `bookingId` - query for a specific booking.",
+                "    Example: ```\"filter { string_value: \"{ \"bookingId\": \"46ce4cd4-46ff-4aa7-9cc0-02fd4f0f3209\" }\" }\"```.",
+                "  - `contactId` - Bookings made by this contactId (defined in Contact service).",
+                "    Example: ```\"filter { string_value: \"{ \"contactId\": \"b68960d3-820a-4588-a6b3-d7238add8af5\" }\" }\"```.",
+                "  - `sessionId` - Bookings made to this sessionId. Support for a list of sessionIds;",
+                "    Example: ```\"filter { string_value: \"{ \"sessionId\": [\"193ZPR9ppP9emJUCLevcLf6orynNE45\", \"193ZPR9ppP9emJUCLevcLf6orynNE98\"] }\" }\"```.",
+                "  - `scheduleId` - Bookings made to sessions from this scheduleId, or made to the scheduleId itself. We support list of scheduleIds;",
+                "    Example: ```\"filter { string_value: \"{ \"scheduleId\": [\"cd65b7de-164c-471b-908d-ee94d8ba6459\", \"fa573e37-e035-4bec-93b8-05cb90fe7aba\"] }\" }\"```.",
+                "  - `startTime` - Bookings with booked entity (schedule/session) start time. We support 'gte' , 'lt';",
+                "    Examples:",
+                "      - All bookings that will start after or equal to `27/04/20 10:00:00` - ```\"filter { string_value: \"{ \"startTime\": {\"$gte\": \"2020-04-27T10:00:00.000Z\" }}\" }\"```.",
+                "      - All bookings that start before `27/04/20 10:00:00` - ```\"filter { string_value: \"{ \"startTime\": {\"$lt\": \"2020-04-27T10:00:00.000Z\" }}\" }\"```.",
+                "  - `endTime` - Bookings with booked entity (schedule/session) end time. We support 'gt' , 'lte';",
+                "    Examples:",
+                "      - All bookings that will start after `27/04/20 10:00:00` - ```\"filter { string_value: \"{ \"startTime\": {\"$gt\": \"2020-04-27T10:00:00.000Z\" }}\" }\"```.",
+                "      - All bookings that start before or equal to `27/04/20 10:00:00` - ```\"filter { string_value: \"{ \"startTime\": {\"$lte\": \"2020-04-27T10:00:00.000Z\" }}\" }\"```.",
+                "  - `status` - Bookings with this status. We support list of statuses.",
+                "    Example: \"filter { string_value: \"{ \"status\": [\"CONFIRMED\", \"PENDING\"] }\" }\".",
+                "- **paging**: Supported. Limit Example: \"query { paging { limit { value: 10 } } }\". Offset Example: \"query { paging { offset { value: 10 } } }\".",
+                "- **fieldsets**: not supported.",
+                "- **fields**: not supported.",
+                "",
+                "**Important**:",
+                "- Only one use at a time of each filter once in the same query is supported. If a filter will be used more than once in one query, only the first occurrence is taken.",
+                "  Calling List without any filter, will return all bookings permitted to watch by the invoker permission.",
+                "- All results are for one specific business, resolved from the request context.",
+                "- A Member can only see its own bookings;",
+                "",
+                "- It is able to get the available actions for a member to do on each booking based on the business bookings policy using the with_booking_allowed_actions field.",
+                "",
+                "> **Permissions**",
+                "> This endpoint requires the Read Bookings - Including Participants permission scope." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "listByContacts",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "listByContactsRequest",
+              "type": "wix-bookings-backend.ListByContactsRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.ListByContactsResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 6,
+              "filename": "listByContacts.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }

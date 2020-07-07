@@ -1,0 +1,135 @@
+{ "name": "servicesCatalog",
+  "memberOf": "wix-bookings-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1,
+      "filename": "list.js" },
+  "docs":
+    { "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "backOfficeList",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "backOfficeListRequest",
+              "type": "wix-bookings-backend.BackOfficeListRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.BackOfficeListResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 16,
+              "filename": "backOfficeList.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "get",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "getServiceRequest",
+              "type": "wix-bookings-backend.GetServiceRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.GetServiceResponse" ] },
+            "doc": "Fulfilled - A full catalog detailed response containing all the information related to a service." },
+        "locations":
+          [ { "lineno": 12,
+              "filename": "get.js" } ],
+        "docs":
+          { "summary": "Retrieves a service, including all its data.",
+            "description":
+              [ "> **Permissions**",
+                "> This endpoint requires the Read Bookings - Public Data, the Read Bookings - Including Participants or the Manage Bookings permissions scope" ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "list",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "listServicesRequest",
+              "type": "wix-bookings-backend.ListServicesRequest",
+              "doc": "List catalog items request" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.ListServicesResponse" ] },
+            "doc": "Fulfilled - A list of catalog service response." },
+        "locations":
+          [ { "lineno": 74,
+              "filename": "list.js" } ],
+        "docs":
+          { "summary": "Retrieves a list of services, given the provided filtering.",
+            "description":
+              [ "Returns a list of enriched services; Based on the invoker permissions and the request query.",
+                "Query object support:",
+                "- **filter**: supports",
+                "  - `service.id` - query for a specific service.",
+                "    Example: ```\"filter { string_value: \"{ \"service.id\": \"46ce4cd4-46ff-4aa7-9cc0-02fd4f0f3209\" }\" }\"```.",
+                "  - `category.id` - query for all services that belongs to the category.",
+                "    Example: ```\"filter { string_value: \"{ \"category.id\": \"55ce4cd4-46ff-4aa7-9cc0-01fd4f0f3209\" }\" }\"```.",
+                "  - `service.info.name` - query for all services with given name.",
+                "    Example: ```\"filter { string_value: \"{ \"service.info.name\": \"haircut\" }\" }\"```.",
+                "  - `service.info.tagLine` - query for all services with given tag line.",
+                "    Example: ```\"filter { string_value: \"{ \"service.info.tagLine\": \"short haircut\" }\" }\"```.",
+                "  - `service.policy.isBookOnlineAllowed` - query for all services that can be booked online.",
+                "    Example: ```\"filter { string_value: \"{ \"service.policy.isBookOnlineAllowed\": true }\" }\"```.",
+                "  - `category.name` - query for all services that belongs to categories with given name.",
+                "    Example: ```\"filter { string_value: \"{ \"categoty.name\": \"hair services\" }\" }\"```.",
+                "  - `service.customProperties.tag` - query for all services that has given tag.",
+                "    Example: ```\"filter { string_value: \"{ \"service.customProperties.tag\": \"hair services\" }\" }\"```.",
+                "  - `service.paymentOptions.wixPayOnline` - query for all services that can be payed Online with Wix Pay.",
+                "    Example: ```\"filter { string_value: \"{ \"service.paymentOptions.wixPayOnline\": true }\" }\"```.",
+                "  - `service.paymentOptions.wixPayInPerson` - query for all services that be payed Offline with Wix Pay..",
+                "    Example: ```\"filter { string_value: \"{ \"service.paymentOptions.wixPayInPerson\": true }\" }\"```.",
+                "  - `service.paymentOptions.wixPaidPlan` - query for all services that can be booked using a paid plan.",
+                "    Example: ```\"filter { string_value: \"{ \"service.paymentOptions.wixPaidPlan\": true }\" }\"```.",
+                "  - `service.paymentOptions.custom` - query for all services that has a custom payment method.",
+                "    Example: ```\"filter { string_value: \"{ \"service.paymentOptions.custom\": true }\" }\"```.",
+                "  - `slugs.name` - query for service with given slug.",
+                "    Example: ```\"filter { string_value: \"{ \"slugs.name\": \"woman-hair-cut\" }\" }\"```.",
+                "  - `schedules.tags` - query for all services that has a schedule with given tag.",
+                "    Example: ```\"filter { string_value: \"{ \"schedules.tags\": \"Group\" }\" }\"```.",
+                "  - `resources.id` - query for all services that are given by a given resource.",
+                "    Example: ```\"filter { string_value: \"{ \"resources.id\": \"46ce4cd4-46ff-4aa7-9cc0-02fd4f0f3209\" }\" }\"```.",
+                "  - `service.policy.bookingsApprovalPolicy.isBusinessApprovalRequired` - query for all services that require business approval.",
+                "    Example: ```\"filter { string_value: \"{ \"service.policy.bookingsApprovalPolicy.isBusinessApprovalRequired\": true }\" }\"```.",
+                "- **paging**: Supported. Limit Example: \"query { paging { limit { value: 10 } } }\". Offset Example: \"query { paging { offset { value: 10 } } }\".",
+                "- **fieldsets**: not supported.",
+                "- **fields**: any projection is supported.",
+                "    Example: query { fields [\"service.id\", \"service.status\", \"service.info.name\"] }",
+                "**Important**:",
+                "  Calling List without any filter, will return all non deleted services.",
+                "- All results are for one specific business, resolved from the request context.",
+                "",
+                "> **Permissions**",
+                "> This endpoint requires the Read Bookings - Public Data, the Read Bookings - Including Participants or the Manage Bookings permissions scope" ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }

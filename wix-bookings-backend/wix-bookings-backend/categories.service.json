@@ -1,0 +1,183 @@
+{ "name": "categories",
+  "memberOf": "wix-bookings-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1,
+      "filename": "update.js" },
+  "docs":
+    { "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "batchCreate",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "batchCreateCategoryRequest",
+              "type": "wix-bookings-backend.BatchCreateCategoryRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.BatchCreateCategoryResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 16,
+              "filename": "batchCreate.js" } ],
+        "docs":
+          { "summary": "Creates multiple new categories.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "batchDelete",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "batchDeleteCategoryRequest",
+              "type": "wix-bookings-backend.BatchDeleteCategoryRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.BatchDeleteCategoryResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 15,
+              "filename": "batchDelete.js" } ],
+        "docs":
+          { "summary": "Deletes multiple categories.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "batchUpdate",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "batchUpdateCategoryRequest",
+              "type": "wix-bookings-backend.BatchUpdateCategoryRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.BatchUpdateCategoryResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 16,
+              "filename": "batchUpdate.js" } ],
+        "docs":
+          { "summary": "Updates multiple categories.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "create",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "createCategoryRequest",
+              "type": "wix-bookings-backend.CreateCategoryRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.CreateCategoryResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 16,
+              "filename": "create.js" } ],
+        "docs":
+          { "summary": "Creates a new category.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "delete",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "deleteCategoryRequest",
+              "type": "wix-bookings-backend.DeleteCategoryRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.DeleteCategoryResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 16,
+              "filename": "delete.js" } ],
+        "docs":
+          { "summary": "Deletes a category.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "list",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "listCategoryRequest",
+              "type": "wix-bookings-backend.ListCategoryRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.ListCategoryResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 17,
+              "filename": "list.js" } ],
+        "docs":
+          { "summary": "Lists all categories.",
+            "description":
+              [ "> **Permissions**",
+                "> This endpoint requires the Read Bookings - Public Data or the Read Bookings - Including Participants permissions scope" ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "update",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "updateCategoryRequest",
+              "type": "wix-bookings-backend.UpdateCategoryRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.UpdateCategoryResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 15,
+              "filename": "update.js" } ],
+        "docs":
+          { "summary": "Updates an existing category.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }

@@ -1,0 +1,114 @@
+{ "name": "forms",
+  "memberOf": "wix-bookings-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1,
+      "filename": "update.js" },
+  "docs":
+    { "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "create",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "createFormRequest",
+              "type": "wix-bookings-backend.CreateFormRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.CreateFormResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 16,
+              "filename": "create.js" } ],
+        "docs":
+          { "summary": "Creates a form.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "delete",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "deleteFormRequest",
+              "type": "wix-bookings-backend.DeleteFormRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.DeleteFormResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 16,
+              "filename": "delete.js" } ],
+        "docs":
+          { "summary": "Delete a form",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "get",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "getFormRequest",
+              "type": "wix-bookings-backend.GetFormRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.GetFormResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 16,
+              "filename": "get.js" } ],
+        "docs":
+          { "summary": "Gets a form",
+            "description":
+              [ "> **Permissions**",
+                "> This endpoint requires the Read Bookings - Public Data or Read Bookings - Including Participants permissions scope" ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "update",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "updateFormRequest",
+              "type": "wix-bookings-backend.UpdateFormRequest" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-bookings-backend.UpdateFormResponse" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 16,
+              "filename": "update.js" } ],
+        "docs":
+          { "summary": "Updates a form.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }
