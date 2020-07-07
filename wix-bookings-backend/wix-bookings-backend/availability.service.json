@@ -1,8 +1,7 @@
 { "name": "availability",
   "memberOf": "wix-bookings-backend",
   "mixes": [],
-  "labels":
-    [ "new" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "unlock.js" },
@@ -26,7 +25,7 @@
                   [ "wix-bookings-backend.IsAvailableResponse" ] },
             "doc": "" },
         "locations":
-          [ { "lineno": 42,
+          [ { "lineno": 40,
               "filename": "isAvailable.js" } ],
         "docs":
           { "summary": "Returns the current availability of a requested entity.",

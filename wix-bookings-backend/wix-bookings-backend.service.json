@@ -1,7 +1,7 @@
 { "name": "wix-bookings-backend",
   "mixes": [],
   "labels":
-    [ "new" ],
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "shared-e89e1eb.js" },
@@ -12,16 +12,16 @@
         {  } },
   "properties":
     [ { "name": "availability",
-        "labels": [],
-        "get": true,
+        "labels":
+          [ "changed" ],
+        "get": false,
         "set": false,
-        "type": "wix-bookings-backend.availability",
+        "type": "void",
         "locations":
           [ { "lineno": 6,
               "filename": "isAvailable.js" } ],
         "docs":
-          { "summary": "testing sub-namespaces",
-            "links": [],
+          { "links": [],
             "examples": [],
             "extra":
               {  } },
@@ -215,7 +215,7 @@
         "labels": [] },
       { "name": "AvailabilityFor",
         "locations":
-          [ { "lineno": 29,
+          [ { "lineno": 27,
               "filename": "isAvailable.js" },
             { "lineno": 24,
               "filename": "getAvailability.js" } ],
@@ -2433,7 +2433,7 @@
         "labels": [] },
       { "name": "IsAvailableRequest",
         "locations":
-          [ { "lineno": 36,
+          [ { "lineno": 34,
               "filename": "isAvailable.js" } ],
         "docs":
           { "links": [],
@@ -2451,7 +2451,7 @@
         "labels": [] },
       { "name": "IsAvailableResponse",
         "locations":
-          [ { "lineno": 22,
+          [ { "lineno": 20,
               "filename": "isAvailable.js" } ],
         "docs":
           { "links": [],
@@ -4322,7 +4322,7 @@
         "labels": [] },
       { "name": "Slot",
         "locations":
-          [ { "lineno": 13,
+          [ { "lineno": 11,
               "filename": "isAvailable.js" },
             { "lineno": 6,
               "filename": "getAvailability.js" } ],
