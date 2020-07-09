@@ -1,7 +1,8 @@
 { "name": "Events",
   "memberOf": "wix-crm-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "events.js" },
@@ -201,25 +202,26 @@
           { "notes":
               [ "Backend events don't work when previewing your site." ] } },
       { "name": "onFormSubmit",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
               "type": "wix-crm-backend.Events.FormSubmitEvent",
-              "doc": "The form data." } ],
+              "doc": "The Wix Form data." } ],
         "ret":
           { "type": "void" },
         "locations":
           [ { "lineno": 30,
               "filename": "events.js" } ],
         "docs":
-          { "summary": "An event that fires when a user submits a form.",
+          { "summary": "An event that fires when a user submits a Wix Form.",
             "description":
-              [ "The `onFormSubmit()` event handler runs when a user submits a Wix form. The received `FormSubmitEvent`",
-                " object contains information about the form that was submitted." ],
+              [ "The `onFormSubmit()` event handler runs when a user submits a [Wix Form](wix-crm.$w-WixForms). The received `FormSubmitEvent`",
+                " object contains information about the Wix Form that was submitted." ],
             "links": [],
             "examples":
-              [ { "title": "An event when a form is submitted",
+              [ { "title": "An event when a Wix Form is submitted",
                   "body":
                     [ "// Place this code in the events.js file",
                       "// of your site's Backend section.",
@@ -524,11 +526,11 @@
           [ { "lineno": 57,
               "filename": "events.js" } ],
         "docs":
-          { "summary": "An object representing a form field.",
+          { "summary": "An object representing a Wix Form field.",
             "links":
               [ "[onFormSubmit( )](#onFormSubmit)" ],
             "examples":
-              [ { "title": "An event when a form is submitted",
+              [ { "title": "An event when a Wix Form is submitted",
                   "body":
                     [ "// Place this code in the events.js file",
                       "// of your site's Backend section.",
@@ -583,17 +585,18 @@
               "doc": "Value of the field." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "FormSubmitEvent",
         "locations":
           [ { "lineno": 44,
               "filename": "events.js" } ],
         "docs":
-          { "summary": "An object representing a form.",
+          { "summary": "An object representing a Wix Form.",
             "links":
               [ "[onFormSubmit( )](#onFormSubmit)" ],
             "examples":
-              [ { "title": "An event when a form is submitted",
+              [ { "title": "An event when a Wix Form is submitted",
                   "body":
                     [ "// Place this code in the events.js file",
                       "// of your site's Backend section.",
@@ -642,27 +645,28 @@
         "members":
           [ { "name": "contactId",
               "type": "string",
-              "doc": "Contact ID of the user submitting the form." },
+              "doc": "Contact ID of the user submitting the Wix Form." },
             { "name": "formName",
               "type": "string",
-              "doc": "Name of the form." },
+              "doc": "Name of the Wix Form." },
             { "name": "submissionTime",
               "type": "Date",
-              "doc": "Date and time that the form was submitted." },
+              "doc": "Date and time that the Wix Form was submitted." },
             { "name": "submissionData",
               "type":
                 { "name": "Array",
                   "typeParams":
                     [ "wix-crm-backend.Events.FormField" ] },
-              "doc": "Data submitted in the form. The object contains key:value pairs where the key is the field name and the value is the contents of the field." },
+              "doc": "Data submitted in the Wix Form. The object contains key:value pairs where the key is the field name and the value is the contents of the field." },
             { "name": "attachments",
               "type":
                 { "name": "Array",
                   "typeParams":
                     [ "wix-crm-backend.Events.FormAttachment" ] },
-              "doc": "The form's attachments." } ],
+              "doc": "The Wix Form's attachments." } ],
         "extra":
           {  },
-        "labels": [] } ],
+        "labels":
+          [ "changed" ] } ],
   "extra":
     {  } }
