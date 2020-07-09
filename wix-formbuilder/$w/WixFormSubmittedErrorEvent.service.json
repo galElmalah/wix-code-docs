@@ -1,0 +1,73 @@
+{ "name": "WixFormSubmittedErrorEvent",
+  "memberOf": "$w",
+  "mixes":
+    [ "$w.Event" ],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 145,
+      "filename": "form.js" },
+  "docs":
+    { "summary": "Event that is fired when a user presses a submit button on a `WixForms` element but the Wix Form is not successfully submitted to the server.",
+      "description":
+        [ "You do not need to import `$w` or `wix-crm` to work with Wix Forms events." ],
+      "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties":
+    [ { "name": "code",
+        "labels": [],
+        "get": true,
+        "set": false,
+        "type": "string",
+        "locations":
+          [ { "lineno": 155,
+              "filename": "form.js" } ],
+        "docs":
+          { "summary": "Gets the error code for a failed Wix Form submission.",
+            "links": [],
+            "examples":
+              [ { "title": "An event when a Wix Form is submitted",
+                  "body":
+                    [ "$w(\"#wixForms1\").onWixFormSubmittedError(     ",
+                      "  (  {code, message}  ) => {",
+                      "    $w(\"#text1\").text = code;",
+                      "    $w(\"#text2\").text = message;",
+                      "  });" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "message",
+        "labels": [],
+        "get": true,
+        "set": false,
+        "type": "string",
+        "locations":
+          [ { "lineno": 164,
+              "filename": "form.js" } ],
+        "docs":
+          { "summary": "Gets the error message for a failed Wix Form submission.",
+            "links": [],
+            "examples":
+              [ { "title": "An event when a Wix Form is submitted",
+                  "body":
+                    [ "$w(\"#wixForms1\").onWixFormSubmittedError(     ",
+                      "  (  {code, message}  ) => {",
+                      "    $w(\"#text1\").text = code;",
+                      "    $w(\"#text2\").text = message;",
+                      "  });" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "operations": [],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }
