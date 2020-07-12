@@ -50,7 +50,9 @@
                 "     export function button1_click(event) {",
                 "     //Add your code for this event here: ",
                 "     }",
-                " ```" ],
+                " ```",
+                "",
+                " Learn more about adding event handlers to your code by using the [Properties panel](https://support.wix.com/en/article/corvid-reacting-to-user-actions-using-events)." ],
             "links":
               [ "[onDblClick( )](#onDblClick)" ],
             "examples":
@@ -92,7 +94,7 @@
           { "type": "$w.Element",
             "doc": "The element to which the event handler was added." },
         "locations":
-          [ { "lineno": 75,
+          [ { "lineno": 77,
               "filename": "ClickableMixin.es6" } ],
         "docs":
           { "summary": "Adds an event handler that runs when the element is double-clicked.",
