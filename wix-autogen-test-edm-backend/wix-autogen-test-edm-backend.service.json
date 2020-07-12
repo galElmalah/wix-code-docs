@@ -1,0 +1,113 @@
+{ "name": "wix-autogen-test-edm-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1,
+      "filename": "somePublicGaMethod.js" },
+  "docs":
+    { "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "somePublicGaMethod",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "someRequest",
+              "type": "wix-autogen-test-edm-backend.SomeRequest",
+              "doc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nViverra nam libero justo laoreet sit amet cursus. Scelerisque eu ultrices vitae auctor." } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-autogen-test-edm-backend.SomeResponse" ] },
+            "doc": "Fulfilled - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nSed risus ultricies tristique nulla aliquet enim tortor at.\nEu ultrices vitae auctor eu augue ut lectus arcu." },
+        "locations":
+          [ { "lineno": 32,
+              "filename": "somePublicGaMethod.js" } ],
+        "docs":
+          { "summary": "some public method for testing edm-generator...",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "callbacks": [],
+  "messages":
+    [ { "name": "SomeObject",
+        "locations":
+          [ { "lineno": 16,
+              "filename": "somePublicGaMethod.js" } ],
+        "docs":
+          { "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "name",
+              "type": "string",
+              "doc": "The name" },
+            { "name": "description",
+              "type": "string",
+              "doc": "The description" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "SomeRequest",
+        "locations":
+          [ { "lineno": 5,
+              "filename": "somePublicGaMethod.js" } ],
+        "docs":
+          { "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "description":
+              [ "Viverra nam libero justo laoreet sit amet cursus. Scelerisque eu ultrices vitae auctor." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "aString",
+              "type": "string",
+              "doc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna." },
+            { "name": "someObjects",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-autogen-test-edm-backend.SomeObject" ] },
+              "doc": "This is a repeated object" },
+            { "name": "someDate",
+              "type": "Date",
+              "doc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "SomeResponse",
+        "locations":
+          [ { "lineno": 23,
+              "filename": "somePublicGaMethod.js" } ],
+        "docs":
+          { "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "description":
+              [ "Sed risus ultricies tristique nulla aliquet enim tortor at.",
+                "Eu ultrices vitae auctor eu augue ut lectus arcu." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "someId",
+              "type": "string",
+              "doc": "Some id to return" },
+            { "name": "someDate",
+              "type": "Date",
+              "doc": "Some date to return" } ],
+        "extra":
+          {  },
+        "labels": [] } ],
+  "extra":
+    {  } }
