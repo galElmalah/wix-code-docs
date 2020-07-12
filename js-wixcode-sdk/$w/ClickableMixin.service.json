@@ -44,13 +44,11 @@
                 " ![Properties Panel](images/properties_panel.png \"Properties Panel\")",
                 "",
                 "",
-                " This will autmatically add the code",
+                " This will automatically add the required code for the element and event:",
                 "",
-                " ```javascript",
-                "     export function button1_click(event) {",
+                " ```javascript export function button1_click(event) {",
                 "     //Add your code for this event here: ",
-                "     }",
-                " ```" ],
+                "     }  ```" ],
             "links":
               [ "[onDblClick( )](#onDblClick)" ],
             "examples":
@@ -92,7 +90,7 @@
           { "type": "$w.Element",
             "doc": "The element to which the event handler was added." },
         "locations":
-          [ { "lineno": 75,
+          [ { "lineno": 73,
               "filename": "ClickableMixin.es6" } ],
         "docs":
           { "summary": "Adds an event handler that runs when the element is double-clicked.",
