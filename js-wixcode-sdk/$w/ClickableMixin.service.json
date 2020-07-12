@@ -39,7 +39,9 @@
                 " before a `doubleClick` event is also fired.",
                 "",
                 " As an alternative to the `onClick` function you can define an event handler using the properties panel.",
+                "",
                 " ![Properties Panel](images/properties_panel.jpg \"Properties Panel\")",
+                "",
                 " This will autmatically add the code",
                 " ```javascript",
                 "     export function button1_click(event) {",
@@ -87,7 +89,7 @@
           { "type": "$w.Element",
             "doc": "The element to which the event handler was added." },
         "locations":
-          [ { "lineno": 70,
+          [ { "lineno": 72,
               "filename": "ClickableMixin.es6" } ],
         "docs":
           { "summary": "Adds an event handler that runs when the element is double-clicked.",
