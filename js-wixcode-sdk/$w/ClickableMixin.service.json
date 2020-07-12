@@ -40,7 +40,7 @@
                 "",
                 " As an alternative to the `onClick` function you can define an event handler using the properties panel.",
                 "",
-                " ![Properties Panel](../images/properties_panel.jpg \"Properties Panel\")",
+                " ![Properties Panel](images/properties_panel.png \"Properties Panel\")",
                 "",
                 " This will autmatically add the code",
                 " ```javascript",
