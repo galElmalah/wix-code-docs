@@ -2,8 +2,7 @@
   "memberOf": "$w",
   "mixes":
     [ "$w.Event" ],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 147,
       "filename": "form.js" },
@@ -17,8 +16,7 @@
         {  } },
   "properties":
     [ { "name": "code",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": false,
         "type": "string",
@@ -43,8 +41,7 @@
         "extra":
           {  } },
       { "name": "message",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": false,
         "type": "string",

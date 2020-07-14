@@ -2,8 +2,7 @@
   "memberOf": "$w",
   "mixes":
     [ "$w.Event" ],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 137,
       "filename": "form.js" },
@@ -79,7 +78,6 @@
               "doc": "Value of the field. If the field is a checkbox, its value is the checked property. If the field is a Captcha, its value is the token property. If the field is a file upload, its value is an array of the uploaded files' type." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] } ],
+        "labels": [] } ],
   "extra":
     {  } }
