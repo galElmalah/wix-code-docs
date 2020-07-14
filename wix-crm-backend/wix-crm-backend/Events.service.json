@@ -24,7 +24,7 @@
           " export function <wixAppName>_<eventName>(event) { }",
           " ```",
           "",
-          " For example, an event handler that handles user form submittal looks",
+          " For example, an event handler that handles site visitor form submittal looks",
           " like this:",
           "",
           " ```javascript",
@@ -202,7 +202,8 @@
           { "notes":
               [ "Backend events don't work when previewing your site." ] } },
       { "name": "onFormSubmit",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -214,9 +215,9 @@
           [ { "lineno": 30,
               "filename": "events.js" } ],
         "docs":
-          { "summary": "An event that fires when a user submits a Wix Form.",
+          { "summary": "An event that fires when a site member or visitor submits a Wix Form.",
             "description":
-              [ "The `onFormSubmit()` event handler runs when a user submits a [Wix Form](wix-crm.$w-WixForms). The received `FormSubmitEvent`",
+              [ "The `onFormSubmit()` event handler runs when a site member or visitor submits a [Wix Form](wix-crm.$w-WixForms). The received `FormSubmitEvent`",
                 " object contains information about the Wix Form that was submitted." ],
             "links": [],
             "examples":
@@ -519,8 +520,7 @@
               "doc": "URL of the attachment." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "FormField",
         "locations":
           [ { "lineno": 57,
@@ -644,7 +644,7 @@
         "members":
           [ { "name": "contactId",
               "type": "string",
-              "doc": "Contact ID of the user submitting the Wix Form." },
+              "doc": "Contact ID of the site member or visitor submitting the Wix Form." },
             { "name": "formName",
               "type": "string",
               "doc": "Name of the Wix Form." },
@@ -665,6 +665,7 @@
               "doc": "The Wix Form's attachments." } ],
         "extra":
           {  },
-        "labels": [] } ],
+        "labels":
+          [ "changed" ] } ],
   "extra":
     {  } }
