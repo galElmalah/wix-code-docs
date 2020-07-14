@@ -20,7 +20,7 @@
           " [hidden](#hidden) properties of the elements contained in the form do not change.",
           "",
           " A `Form` element is added automatically when you add the [`WixForms`](wix-crm.html#\\$w-WixForms) ",
-          " app element to the page. These two elements work together to provide the functionality available with Wix Forms.",
+          " app element to the page. These 2 elements work together to provide the functionality available with Wix Forms.",
           "",
           " Because they work together, if you hide or collapse either the `WixForms` or the `Form` element, the other element ",
           " is also hidden/collapsed." ],
@@ -63,8 +63,7 @@
         "extra":
           {  } },
       { "name": "style",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "get": true,
         "set": false,
         "type": "$w.style",
