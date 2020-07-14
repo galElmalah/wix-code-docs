@@ -2,7 +2,8 @@
   "memberOf": "$w",
   "mixes":
     [ "$w.HiddenCollapsedMixin" ],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "form.js" },
@@ -124,7 +125,8 @@
         "extra":
           { "eventType": "WixFormSubmittedEvent" } },
       { "name": "onWixFormSubmittedError",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "eventHandler",
@@ -164,7 +166,7 @@
               [ "[WixFormSubmittedErrorEvent](#WixFormSubmittedErrorEvent)",
                 "[onWixFormSubmitted](#onWixFormSubmitted)" ],
             "examples":
-              [ { "title": "An event triggered on a WixForms element when the Wix Form is submitted",
+              [ { "title": "An event triggered on a WixForms element when the Wix Form is not submitted successfully",
                   "body":
                     [ "$w(\"#myWixForms\").onWixFormSubmittedError(     ",
                       "  (  {code, message}  ) => {",
