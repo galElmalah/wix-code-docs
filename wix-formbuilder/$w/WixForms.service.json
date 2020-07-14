@@ -2,7 +2,8 @@
   "memberOf": "$w",
   "mixes":
     [ "$w.HiddenCollapsedMixin" ],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "form.js" },
@@ -179,11 +180,12 @@
           { "eventType": "WixFormSubmittedErrorEvent" } } ],
   "callbacks":
     [ { "name": "WixFormSubmittedErrorEventHandler",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
-              "type": "$w.WixFormSubmittedErrorEvent",
+              "type": "$w.WixForms.WixFormSubmittedErrorEvent",
               "doc": "The Wix Forms event that occurred." } ],
         "ret":
           { "type": "void" },
@@ -199,11 +201,12 @@
         "extra":
           {  } },
       { "name": "WixFormSubmittedEventHandler",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
-              "type": "$w.WixFormSubmittedErrorEvent",
+              "type": "$w.WixForms.WixFormSubmittedEvent",
               "doc": "The Wix Forms event that occurred." } ],
         "ret":
           { "type": "void" },

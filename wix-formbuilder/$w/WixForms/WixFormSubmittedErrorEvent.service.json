@@ -1,0 +1,23 @@
+{ "name": "WixFormSubmittedErrorEvent",
+  "memberOf": "$w.WixForms",
+  "mixes":
+    [ "$w.Event" ],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 147,
+      "filename": "form.js" },
+  "docs":
+    { "summary": "Event that is fired when a site member or visitor clicks a submit button on a `WixForms` element but the Wix Form is not successfully submitted to the server.",
+      "description":
+        [ "You do not need to import `$w` or `wix-crm` to work with Wix Forms events." ],
+      "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations": [],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }

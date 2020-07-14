@@ -1,0 +1,23 @@
+{ "name": "WixFormSubmittedEvent",
+  "memberOf": "$w.WixForms",
+  "mixes":
+    [ "$w.Event" ],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 137,
+      "filename": "form.js" },
+  "docs":
+    { "summary": "Event that is fired when a site member or visitor clicks a submit button on a `WixForms` element and the Wix Form is successfully submitted to the server.",
+      "description":
+        [ "You do not need to import `$w` or `wix-crm` to work with Wix Forms events." ],
+      "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations": [],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }
