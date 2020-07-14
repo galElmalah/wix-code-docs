@@ -3,7 +3,7 @@
   "mixes":
     [ "$w.Event" ],
   "labels":
-    [ "new" ],
+    [ "changed" ],
   "location":
     { "lineno": 147,
       "filename": "form.js" },
@@ -15,7 +15,59 @@
       "examples": [],
       "extra":
         {  } },
-  "properties": [],
+  "properties":
+    [ { "name": "code",
+        "labels":
+          [ "new" ],
+        "get": true,
+        "set": false,
+        "type": "string",
+        "locations":
+          [ { "lineno": 157,
+              "filename": "form.js" } ],
+        "docs":
+          { "summary": "Gets the error code for a failed Wix Form submission.",
+            "links": [],
+            "examples":
+              [ { "title": "An event when a Wix Form is submitted",
+                  "body":
+                    [ "$w(\"#myWixForms\").onWixFormSubmittedError(     ",
+                      "  (  {code, message}  ) => {",
+                      "    $w(\"#errorCodeText\").text = code;",
+                      "    $w(\"#errorMessageText\").text = message;",
+                      "  });" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "message",
+        "labels":
+          [ "new" ],
+        "get": true,
+        "set": false,
+        "type": "string",
+        "locations":
+          [ { "lineno": 166,
+              "filename": "form.js" } ],
+        "docs":
+          { "summary": "Gets the error message for a failed Wix Form submission.",
+            "links": [],
+            "examples":
+              [ { "title": "An event when a Wix Form is submitted",
+                  "body":
+                    [ "$w(\"#myWixForms\").onWixFormSubmittedError(     ",
+                      "  (  {code, message}  ) => {",
+                      "    $w(\"#errorCodeText\").text = code;",
+                      "    $w(\"#errorMessageText\").text = message;",
+                      "  });" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
   "operations": [],
   "callbacks": [],
   "messages": [],

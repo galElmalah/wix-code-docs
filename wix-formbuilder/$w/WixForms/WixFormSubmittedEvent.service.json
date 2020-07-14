@@ -3,7 +3,7 @@
   "mixes":
     [ "$w.Event" ],
   "labels":
-    [ "new" ],
+    [ "changed" ],
   "location":
     { "lineno": 137,
       "filename": "form.js" },
@@ -18,6 +18,68 @@
   "properties": [],
   "operations": [],
   "callbacks": [],
-  "messages": [],
+  "messages":
+    [ { "name": "wixFormField",
+        "locations":
+          [ { "lineno": 175,
+              "filename": "form.js" } ],
+        "docs":
+          { "summary": "An object representing a Wix Form field.",
+            "description":
+              [ "A maximum of 10 form fields can be added to the Wix Form. To add more form fields to a Wix Form, [upgrade your site](https://support.wix.com/en/article/upgrading-your-site-to-premium-3066683)." ],
+            "links": [],
+            "examples":
+              [ { "title": "An event when a Wix Form is submitted",
+                  "body":
+                    [ "$w(\"#myWixForm\").onWixFormSubmitted( {fields} => {",
+                      "  let firstName = fields[0].fieldValue;",
+                      "  let lastName = fields[1].fieldValue;",
+                      "  let donation = fields[2].fieldValue;",
+                      "  let email = fields[3].fieldValue;",
+                      "  $w('#myText').text = `Thank you, ${firstName} ${lastName}, for your generous donation of ${donation}.`;",
+                      "});",
+                      "",
+                      "/* fields array of objects: ",
+                      " * [",
+                      " *    { ",
+                      " *      \"id\" : \"inputFirstName\",",
+                      " *      \"fieldValue\" : \"Maria\",",
+                      " *      \"fieldName\" : \"Enter first name\"",
+                      " *    },",
+                      " *    { ",
+                      " *      \"id\" : \"inputLastName\",",
+                      " *      \"fieldValue\" : \"Santora\",",
+                      " *      \"fieldName\" : \"Enter last name\"",
+                      " *    },",
+                      " *    { ",
+                      " *      \"id\" : \"inputDonation\",",
+                      " *      \"fieldValue\" : \"1000\",",
+                      " *      \"fieldName\" : \"Enter donation amount\"",
+                      " *    },",
+                      " *    { ",
+                      " *      \"id\" : \"inputEmail\",",
+                      " *      \"fieldValue\" : \"ms@theCompany\",",
+                      " *      \"fieldName\" : \"Enter email\"",
+                      " *    }",
+                      " * ] ",
+                      " */" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "id",
+              "type": "string",
+              "doc": "The WixForms element's unique identifier. Used when selecting elements using the `$w()` selector." },
+            { "name": "fieldName",
+              "type": "string",
+              "doc": "Name of the field." },
+            { "name": "fieldValue",
+              "type": "string",
+              "doc": "Value of the field. If the field is a checkbox, its value is the checked property. If the field is a Captcha, its value is the token property. If the field is a file upload, its value is an array of the uploaded files' type." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] } ],
   "extra":
     {  } }
