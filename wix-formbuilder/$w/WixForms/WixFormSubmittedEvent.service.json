@@ -17,7 +17,8 @@
         {  } },
   "properties":
     [ { "name": "wixFormField",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": false,
         "type": "Object",
@@ -26,8 +27,6 @@
               "filename": "form.js" } ],
         "docs":
           { "summary": "An object representing a Wix Form field.",
-            "description":
-              [ "A maximum of 10 form fields can be added to the Wix Form. To add more form fields to a Wix Form, [upgrade your site](https://support.wix.com/en/article/upgrading-your-site-to-premium-3066683)." ],
             "links": [],
             "examples":
               [ { "title": "An event triggered on a WixForms element when the Wix Form is submitted",

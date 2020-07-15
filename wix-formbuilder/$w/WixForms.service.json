@@ -2,7 +2,8 @@
   "memberOf": "$w",
   "mixes":
     [ "$w.HiddenCollapsedMixin" ],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "form.js" },
@@ -221,4 +222,4 @@
   "messages": [],
   "extra":
     { "notes":
-        [ "Alternatively, you can use the Corvid API to create your own custom form without the Wix Forms app and connect \n the form's fields to a collection. You can create a custom form with standard input elements \n and a button for submission. When customizing your own form, you have \n options that might not yet be available from the Wix Forms app. For example, you can add more than 10 fields\n to your form without upgrading your site to premium, and you can add more varied input elements like sliders and togglers." ] } }
+        [ "Alternatively, you can use the Corvid API to create your own custom form without the Wix Forms app and connect \n the form's fields to a collection. You can create a custom form with standard input elements \n and a button for submission. When customizing your own form, you have \n options that might not yet be available from the Wix Forms app. For example, you can add more than 10 fields\n to your form and you can add more varied input elements not yet supported with the app." ] } }
