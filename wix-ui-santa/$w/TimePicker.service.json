@@ -23,14 +23,13 @@
         {  } },
   "properties":
     [ { "name": "step",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
-        "set": true,
+        "set": false,
         "type": "number",
         "locations":
-          [ { "lineno": 142,
-              "filename": "TimePicker.js" },
-            { "lineno": 187,
+          [ { "lineno": 140,
               "filename": "TimePicker.js" } ],
         "docs":
           { "summary": "Sets or gets the number of minutes the time picker steps.",
@@ -77,14 +76,13 @@
         "extra":
           {  } },
       { "name": "useAmPmFormat",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
-        "set": true,
+        "set": false,
         "type": "boolean",
         "locations":
-          [ { "lineno": 213,
-              "filename": "TimePicker.js" },
-            { "lineno": 243,
+          [ { "lineno": 210,
               "filename": "TimePicker.js" } ],
         "docs":
           { "summary": "Sets or gets whether the time picker uses 12-hour or 24-hour format.",
@@ -117,7 +115,8 @@
           {  } },
       { "name": "value",
         "labels":
-          [ "changed" ],
+          [ "changed",
+            "removed" ],
         "get": true,
         "set": true,
         "type": "string",
