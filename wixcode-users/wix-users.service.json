@@ -26,8 +26,7 @@
         {  } },
   "properties":
     [ { "name": "Policy",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "get": true,
         "set": false,
         "type": "wix-users",
@@ -69,8 +68,7 @@
           { "notes":
               [ "The APIs in `wix-users` are only partially functional when previewing your site.\n View a published version of your site to see their complete functionality.\n\n The APIs in `wix-users` can only be used once the page has loaded. Therefore,\n you must use them in code that is contained in or is called from the\n [onReady()]($w.html#onReady) event handler or any element event handler.\n\n GDPR banners are only available on the published version of your site." ] } },
       { "name": "PolicyDetails",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "get": true,
         "set": false,
         "type": "wix-users",
@@ -409,8 +407,7 @@
         "extra":
           {  } },
       { "name": "emailUser",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "emailId",
@@ -516,8 +513,7 @@
           { "notes":
               [ "The APIs in `wix-users` are only partially functional when previewing your site.\n View a published version of your site to see their complete functionality." ] } },
       { "name": "getCurrentConsentPolicy",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "nameParams": [],
         "params": [],
         "ret":
@@ -660,7 +656,7 @@
               [ "The APIs in `wix-users` are only partially functional when previewing your site.\n View a published version of your site to see their complete functionality.\n\n The APIs in `wix-users` can only be used once the page has loaded. Therefore,\n you must use them in code that is contained in or is called from the\n [onReady()]($w.html#onReady) event handler or any element event handler." ] } },
       { "name": "onConsentPolicyChanged",
         "labels":
-          [ "new" ],
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "handler",
@@ -681,7 +677,20 @@
                 " code panel so that the `ConsentPolicyChangedHandler()` event handler runs no matter which",
                 " page on your site a user uses to log in." ],
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Run code when a user changes their consent policy",
+                  "body":
+                    [ "import wixUsers from 'wix-users';",
+                      "",
+                      "// ...",
+                      "",
+                      "wixUsers.onConsentPolicyChanged( (user) => {",
+                      "  let userId = user.id;           // \"r5cme-6fem-485j-djre-4844c49\"",
+                      "  let isLoggedIn = user.loggedIn; // true",
+                      "  let userRole = user.role;       // \"Member\"",
+                      "} );" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":
@@ -860,8 +869,7 @@
           { "notes":
               [ "The APIs in `wix-users` are only partially functional when previewing your site.\n View a published version of your site to see their complete functionality.\n\n The APIs in `wix-users` can only be used once the page has loaded. Therefore,\n you must use them in code that is contained in or is called from the\n [onReady()]($w.html#onReady) event handler or any element event handler." ] } },
       { "name": "register",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "email",
@@ -968,8 +976,7 @@
           { "notes":
               [ "The APIs in `wix-users` are only partially functional when previewing your site.\n View a published version of your site to see their complete functionality.\n\n When member registration is set to auto approve, calling the `register()`\n function client-side is equally as secure as calling it from backend code.\n However, when member approval is set to manual, calling the [backend version\n of the `register()` function](wix-users-backend.html#register) allows you\n to construct more secure approval flows." ] } },
       { "name": "resetConsentPolicy",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "nameParams": [],
         "params": [],
         "ret":
@@ -1017,7 +1024,7 @@
               [ "The APIs in `wix-users` are only partially functional when previewing your site.\n View a published version of your site to see their complete functionality.\n\n The APIs in `wix-users` can only be used once the page has loaded. Therefore,\n you must use them in code that is contained in or is called from the\n [onReady()]($w.html#onReady) event handler or any element event handler.\n\n GDPR banners are only available on the published version of your site." ] } },
       { "name": "setConsentPolicy",
         "labels":
-          [ "new" ],
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "policyDetails",
@@ -1043,7 +1050,39 @@
                 "The GDPR [consent policy](https://support.wix.com/en/article/preparing-your-wix-site-for-the-gdpr)",
                 "helps you comply with GDPR regulations and lets your users control their information." ],
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Set a user's consent policy.",
+                  "body":
+                    [ "import { setConsentPolicy } from 'wix-users';",
+                      "",
+                      "const myPolicy = {",
+                      "  \"essential\" : true,",
+                      "  \"functional\" : true,",
+                      "  \"analytics\" : true,",
+                      "  \"advertising\" : false,",
+                      "  \"dataToThirdParty\" : false",
+                      "}",
+                      "",
+                      "setConsentPolicy(myPolicy)",
+                      "  .then( (policyDetails) => {",
+                      "    let consentPolicyDetails = policyDetails;",
+                      "  } );",
+                      "",
+                      "/* consentPolicyDetails:",
+                      " * {",
+                      " *   \"defaultPolicy\" : false,",
+                      " *   \"policy\" : {",
+                      " *     \"essential\" : true,",
+                      " *     \"functional\" : true,",
+                      " *     \"analytics\" : true,",
+                      " *     \"advertising\" : false,",
+                      " *     \"dataToThirdParty\" : false",
+                      " *   },",
+                      " *   \"createdDate\" : 2020-07-20T12:33:09.775Z",
+                      " * }",
+                      " */" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":
@@ -1051,8 +1090,7 @@
               [ "The APIs in `wix-users` are only partially functional when previewing your site.\n View a published version of your site to see their complete functionality.\n\n The APIs in `wix-users` can only be used once the page has loaded. Therefore,\n you must use them in code that is contained in or is called from the\n [onReady()]($w.html#onReady) event handler or any element event handler.\n\n GDPR banners are only available on the published version of your site." ] } } ],
   "callbacks":
     [ { "name": "ConsentPolicyChangedHandler",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "user",
