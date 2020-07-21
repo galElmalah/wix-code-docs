@@ -1,6 +1,7 @@
 { "name": "wix-edm-generator-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" },
@@ -126,13 +127,16 @@
         "extra":
           {  } },
       { "name": "updateEdmDefinition",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "edmName",
               "type": "string",
               "doc": "The EDM-name as will be published to NPM, of the form wix-***-backend" },
-            { "type": "void" } ],
+            { "name": "edmDefinition",
+              "type": "wix-edm-generator-backend.EdmDefinition",
+              "doc": "edm definition without name" } ],
         "ret":
           { "type":
               { "name": "Promise",
