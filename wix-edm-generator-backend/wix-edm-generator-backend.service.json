@@ -1,6 +1,7 @@
 { "name": "wix-edm-generator-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" },
@@ -388,11 +389,12 @@
               "type": "object",
               "doc": "Set of key-value pairs.\nAny object that provides more metadata for the transformation.\nfor example: { \"0\": { \"name\": \"id\" } } for a request transformation (which means, \"the first parameter is named `id`\"),\nor { \"result\": { \"description\": \"My custom response object\" } } for a response transformation.\n\nFor a request transformation, the expected keys are numbers, which reflects the index of the passed parameter.\n\nFor a response transformation, the expected keys are \"result\" for the top level result, and any nested keys that are part of the response object (recursively)\nFor example, if the returend value is {\"myField\": string}, provide the key \"myField\"." },
             { "name": "mapOrString",
-              "type": "wix-edm-generator-backend.ValueTransformation.MapOrString",
+              "type": "wix-edm-generator-backend.ValueTransformation_MapOrString",
               "doc": "This object must contain a value for exactly one of its properties" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "ValueTransformationMetadata",
         "locations":
           [ { "lineno": 11,
@@ -415,6 +417,27 @@
               "doc": "A type name to be displayed in the docs. can be used in both request and response transformations." } ],
         "extra":
           {  },
-        "labels": [] } ],
+        "labels": [] },
+      { "name": "ValueTransformation_MapOrString",
+        "locations":
+          [ { "lineno": 32,
+              "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" } ],
+        "docs":
+          { "summary": "This object must contain a value for exactly one of its properties",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "complexMapping",
+              "type": "object",
+              "doc": "E.g. { \"secret\": { \"name\": \"$[0]\", \"value\": \"$[1]\", \"description\": \"$[2].options.description\" } }" },
+            { "name": "simpleMapping",
+              "type": "string",
+              "doc": "E.g. \"$[0].id\"" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] } ],
   "extra":
     {  } }
