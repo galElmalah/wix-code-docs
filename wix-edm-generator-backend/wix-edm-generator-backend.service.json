@@ -393,8 +393,7 @@
               "doc": "This object must contain a value for exactly one of its properties" } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "ValueTransformationMetadata",
         "locations":
           [ { "lineno": 11,
@@ -430,7 +429,7 @@
               {  } },
         "members":
           [ { "name": "complexMapping",
-              "type": "object",
+              "type": "Object",
               "doc": "E.g. { \"secret\": { \"name\": \"$[0]\", \"value\": \"$[1]\", \"description\": \"$[2].options.description\" } }" },
             { "name": "simpleMapping",
               "type": "string",
@@ -438,6 +437,6 @@
         "extra":
           {  },
         "labels":
-          [ "new" ] } ],
+          [ "changed" ] } ],
   "extra":
     {  } }
