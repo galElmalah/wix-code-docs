@@ -1,7 +1,6 @@
 { "name": "wix-edm-generator-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" },
@@ -25,7 +24,7 @@
                   [ "void" ] },
             "doc": "" },
         "locations":
-          [ { "lineno": 120,
+          [ { "lineno": 129,
               "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" } ],
         "docs":
           { "summary": "Create a new edm definition",
@@ -63,7 +62,7 @@
                   [ "wix-edm-generator-backend.EdmDefinition" ] },
             "doc": "" },
         "locations":
-          [ { "lineno": 83,
+          [ { "lineno": 110,
               "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" } ],
         "docs":
           { "summary": "Get an edm definition by its name",
@@ -101,7 +100,7 @@
                         [ "wix-edm-generator-backend.EdmDefinition" ] } ] },
             "doc": "" },
         "locations":
-          [ { "lineno": 102,
+          [ { "lineno": 120,
               "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" } ],
         "docs":
           { "summary": "List all edm definitions",
@@ -170,7 +169,7 @@
   "messages":
     [ { "name": "CreateEdmDefinitionRequest",
         "locations":
-          [ { "lineno": 115,
+          [ { "lineno": 49,
               "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" } ],
         "docs":
           { "links": [],
@@ -185,7 +184,7 @@
         "labels": [] },
       { "name": "CreateEdmDefinitionResponse",
         "locations":
-          [ { "lineno": 111,
+          [ { "lineno": 96,
               "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" } ],
         "docs":
           { "links": [],
@@ -198,7 +197,7 @@
         "labels": [] },
       { "name": "EdmDefinition",
         "locations":
-          [ { "lineno": 5,
+          [ { "lineno": 22,
               "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" } ],
         "docs":
           { "links": [],
@@ -220,7 +219,7 @@
         "labels": [] },
       { "name": "ExposedProtoService",
         "locations":
-          [ { "lineno": 19,
+          [ { "lineno": 36,
               "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" } ],
         "docs":
           { "links": [],
@@ -251,7 +250,7 @@
         "labels": [] },
       { "name": "GetEdmDefinitionRequest",
         "locations":
-          [ { "lineno": 73,
+          [ { "lineno": 84,
               "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" } ],
         "docs":
           { "links": [],
@@ -266,7 +265,7 @@
         "labels": [] },
       { "name": "GetEdmDefinitionResponse",
         "locations":
-          [ { "lineno": 78,
+          [ { "lineno": 54,
               "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" } ],
         "docs":
           { "links": [],
@@ -281,7 +280,7 @@
         "labels": [] },
       { "name": "ListEdmDefinitionsRequest",
         "locations":
-          [ { "lineno": 98,
+          [ { "lineno": 59,
               "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" } ],
         "docs":
           { "links": [],
@@ -294,7 +293,7 @@
         "labels": [] },
       { "name": "ListEdmDefinitionsResponse",
         "locations":
-          [ { "lineno": 93,
+          [ { "lineno": 100,
               "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" } ],
         "docs":
           { "links": [],
@@ -312,7 +311,7 @@
         "labels": [] },
       { "name": "MethodOverride",
         "locations":
-          [ { "lineno": 28,
+          [ { "lineno": 63,
               "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" } ],
         "docs":
           { "links": [],
@@ -343,7 +342,7 @@
         "labels": [] },
       { "name": "UpdateEdmDefinitionRequest",
         "locations":
-          [ { "lineno": 134,
+          [ { "lineno": 105,
               "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" } ],
         "docs":
           { "links": [],
@@ -358,7 +357,7 @@
         "labels": [] },
       { "name": "UpdateEdmDefinitionResponse",
         "locations":
-          [ { "lineno": 130,
+          [ { "lineno": 45,
               "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" } ],
         "docs":
           { "links": [],
@@ -371,7 +370,7 @@
         "labels": [] },
       { "name": "ValueTransformation",
         "locations":
-          [ { "lineno": 49,
+          [ { "lineno": 5,
               "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" } ],
         "docs":
           { "summary": "A custom JSONPath transformation (https://github.com/json-path/JsonPath) to allow mapping the JS function arguments to the values of the method request-type.",
@@ -391,11 +390,10 @@
               "doc": "This object must contain a value for exactly one of its properties" } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "ValueTransformationMetadata",
         "locations":
-          [ { "lineno": 11,
+          [ { "lineno": 28,
               "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" } ],
         "docs":
           { "summary": "`key` of type string, `value` of type ref",
