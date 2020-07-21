@@ -1,7 +1,8 @@
 { "name": "User",
   "memberOf": "wix-users",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "removed" ],
   "location":
     { "lineno": 40,
       "filename": "users.js" },
