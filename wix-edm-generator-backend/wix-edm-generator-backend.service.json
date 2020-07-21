@@ -1,6 +1,7 @@
 { "name": "wix-edm-generator-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" },
@@ -197,7 +198,7 @@
         "labels": [] },
       { "name": "EdmDefinition",
         "locations":
-          [ { "lineno": 22,
+          [ { "lineno": 5,
               "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" } ],
         "docs":
           { "links": [],
@@ -219,7 +220,7 @@
         "labels": [] },
       { "name": "ExposedProtoService",
         "locations":
-          [ { "lineno": 36,
+          [ { "lineno": 19,
               "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" } ],
         "docs":
           { "links": [],
@@ -357,7 +358,7 @@
         "labels": [] },
       { "name": "UpdateEdmDefinitionResponse",
         "locations":
-          [ { "lineno": 45,
+          [ { "lineno": 28,
               "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" } ],
         "docs":
           { "links": [],
@@ -370,13 +371,13 @@
         "labels": [] },
       { "name": "ValueTransformation",
         "locations":
-          [ { "lineno": 5,
+          [ { "lineno": 32,
               "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" } ],
         "docs":
-          { "summary": "A custom JSONPath transformation (https://github.com/json-path/JsonPath) to allow mapping the JS function arguments to the values of the method request-type.",
+          { "summary": "A custom JSONPath transformation to extract the return value from the method response.",
             "description":
-              [ "Can be either a string (for the identity transformation), or an object (for complex object-to-object transformations).",
-                "See https://github.com/wix-private/cloud-runtime/tree/master/packages/edm-autogen#trasnforming-edm-method-payload-from--to-proto-messages for details" ],
+              [ "Can be either a string (for single-value extraction) or an object (for complext object-to-object transformations).",
+                "See https://github.com/wix-private/cloud-runtime/tree/master/packages/edm-autogen#2-transform-response-proto-message-to-js-function-return-value for details" ],
             "links": [],
             "examples": [],
             "extra":
@@ -390,10 +391,11 @@
               "doc": "This object must contain a value for exactly one of its properties" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "ValueTransformationMetadata",
         "locations":
-          [ { "lineno": 28,
+          [ { "lineno": 11,
               "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" } ],
         "docs":
           { "summary": "`key` of type string, `value` of type ref",
