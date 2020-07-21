@@ -1,7 +1,6 @@
 { "name": "wix-edm-generator-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "com.wixpress.cloud.edm_autogen.api.v1.EdmDefinitionService.js" },
@@ -391,8 +390,7 @@
               "doc": "This object must contain a value for exactly one of its properties" } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "ValueTransformationMetadata",
         "locations":
           [ { "lineno": 11,
